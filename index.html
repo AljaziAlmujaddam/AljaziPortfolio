@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional portfolio — projects, experience, and contact."
+    />
+    <title>Aljazi Almujaddam Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a href="#home" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="nav__logo" id="nav-logo" aria-label="Home">Aljazi Almujaddam Portfolio</a>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#courses" class="nav__link">Courses</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#certificates" class="nav__link">Certificates</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home / Hero -->
+      <section class="hero section" id="home">
+        <div class="container hero__inner">
+          <div class="hero__content fade-in">
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 class="hero__name" id="hero-name"></h1>
+            <p class="hero__title" id="hero-title"></p>
+            <p class="hero__intro" id="hero-intro"></p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a
+                href="#"
+                class="btn btn--secondary"
+                id="btn-cv"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View CV</a
+              >
+              <a href="#contact" class="btn btn--outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero__image-wrapper fade-in">
+            <div class="hero__image-frame">
+              <img
+                id="hero-image"
+                src=""
+                alt="Profile photo"
+                class="hero__image"
+                width="300"
+                height="380"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">About Me</span>
+            <h2 class="section__title">Who I Am</h2>
+          </header>
+          <div class="about__grid">
+            <div class="about__bio card fade-in">
+              <h3 class="card__title">Biography</h3>
+              <p class="about__text" id="about-bio"></p>
+            </div>
+            <div class="about__education card fade-in">
+              <h3 class="card__title">Education</h3>
+              <div id="about-education"></div>
+            </div>
+            <div class="about__interests card fade-in">
+              <h3 class="card__title">Career Interests</h3>
+              <ul class="interest-list" id="about-interests"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses -->
+      <section class="section" id="courses">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Courses</span>
+            <h2 class="section__title">Professional Development</h2>
+          </header>
+          <div class="courses__grid" id="courses-container"></div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Skills</span>
+            <h2 class="section__title">What I Know</h2>
+          </header>
+          <div class="skills__grid" id="skills-container"></div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Projects</span>
+            <h2 class="section__title">Featured Work</h2>
+          </header>
+          <div class="projects__grid" id="projects-container"></div>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section class="section section--alt" id="certificates">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Certificates</span>
+            <h2 class="section__title">Credentials</h2>
+          </header>
+          <div class="certificates__grid" id="certificates-container"></div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Experience</span>
+            <h2 class="section__title">My Journey</h2>
+          </header>
+          <div class="timeline" id="experience-container"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--alt" id="contact">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label">Contact</span>
+            <h2 class="section__title">Get In Touch</h2>
+          </header>
+          <div class="contact__wrapper fade-in">
+            <div class="contact__card card">
+              <p class="contact__text">
+                Feel free to reach out. I'm always open to discussing new
+                opportunities and collaborations.
+              </p>
+              <div class="contact__links" id="contact-links"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">
+          &copy; <span id="footer-year"></span>
+          <span id="footer-name"></span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog">
+        <button class="modal__close" data-close-modal aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+        <div class="modal__content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
