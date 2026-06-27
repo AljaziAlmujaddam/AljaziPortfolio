@@ -10,16 +10,22 @@ const PORTFOLIO_DATA = {
     name: "Aljazi Ali Almujaddam",
     title: "IT & Cybersecurity",
     intro:
-      "Cybersecurity graduate from the University of Bahrain with hands-on experience in secure software development, Linux systems, and technology-driven projects. Skilled in Python, Java, and Linux, with a strong interest in IT infrastructure, cybersecurity, and emerging technologies.",
+      "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
     profileImage: "assets/images/profile.png",
     cvPath: "assets/cv/AljaziAliAlmujaddamResumNew.pdf",
     brandName: "Aljazi Almujaddam Portfolio",
+    heroStats: [
+      { value: "6", label: "Certificates" },
+      { value: "9", label: "Projects" },
+      { value: "3", label: "Courses" },
+      { value: "1", label: "Internship" },
+    ],
   },
 
   /* ── About Me ────────────────────────────────────────────────── */
   about: {
     biography:
-      "I am a cybersecurity graduate from the University of Bahrain with practical experience in secure software development, Linux systems, web applications, and technology-driven academic projects. I developed ShellSentry, an AI-powered platform for secure Linux command validation and remote server management, and I am currently gaining hands-on experience through an IT internship at the Ministry of Interior. I am passionate about building secure, reliable systems and continuously learning in the fields of cybersecurity and IT infrastructure.",
+      "Technology has always inspired me to explore how innovative ideas can become practical solutions. As an IT and Cybersecurity graduate, I enjoy designing and developing systems that combine functionality, security, and usability.\n\nThroughout my academic journey, I have worked on projects covering cybersecurity, secure software development, artificial intelligence, networking, databases, and web technologies. These experiences have strengthened my technical foundation while teaching me the importance of collaboration, continuous learning, and attention to detail.\n\nI am passionate about expanding my knowledge, embracing new challenges, and building solutions that create real value. My goal is to continue growing as a technology professional while contributing to meaningful and impactful projects.",
     education: [
       {
         degree: "Bachelor of Cybersecurity",
@@ -91,6 +97,8 @@ const PORTFOLIO_DATA = {
   ],
 
   /* ── Projects ────────────────────────────────────────────────── */
+  projectsNote:
+    "This section highlights a selection of my most significant projects. I have worked on additional projects not featured here—please feel free to <a href=\"#contact\">contact me</a> if you would like to learn more.",
   projects: [
     {
       id: "shellsentry",
@@ -347,49 +355,6 @@ const PORTFOLIO_DATA = {
       ],
     },
     {
-      id: "telemedicine",
-      title: "Telemedicine Platform",
-      description:
-        "Project management plan for a telemedicine platform enabling remote healthcare services and virtual patient-doctor consultations.",
-      thumbnail: "assets/projects/Telemedicine Platform.png",
-      technologies: ["Project Management", "WBS", "Gantt Charts", "Risk Management", "Stakeholder Analysis"],
-      modal: {
-        overview:
-          "This project focused on planning and managing the development of a telemedicine platform that enables remote healthcare services and virtual patient-doctor consultations.",
-        problem:
-          "Healthcare accessibility is limited when patients cannot easily access in-person medical consultations and centralized appointment management.",
-        solution:
-          "A complete project management plan was developed to support virtual consultations, appointment scheduling, patient management, and healthcare communication.",
-        keyFeatures: [
-          "Virtual consultations planning",
-          "Appointment scheduling",
-          "Patient management",
-          "Healthcare communication",
-          "Work Breakdown Structure (WBS)",
-          "Risk Management Plan",
-        ],
-        technologies: ["Project Management", "WBS", "Gantt Charts", "Risk Management", "Communication Planning"],
-        contributions:
-          "Participated in project planning, conducted stakeholder analysis, developed risk management strategies, and assisted in project scheduling and documentation.",
-        challenges:
-          "Balancing healthcare regulatory requirements with project scope, scheduling, and resource planning.",
-        lessonsLearned:
-          "Produced a complete project management plan that supports the successful implementation of a telemedicine solution.",
-      },
-      resources: [
-        {
-          type: "pdf",
-          label: "Project Report",
-          path: "assets/resources/Telemedicine Platform report.pdf",
-        },
-        {
-          type: "pdf",
-          label: "Presentation",
-          path: "assets/resources/Telemedicine Platform presentation.pdf",
-        },
-      ],
-    },
-    {
       id: "smart-vault",
       title: "Smart Vault – Secure Smart Postbox System",
       description:
@@ -429,6 +394,47 @@ const PORTFOLIO_DATA = {
           type: "pdf",
           label: "Presentation",
           path: "assets/resources/Smart Vault presentation.pdf",
+        },
+      ],
+    },
+    {
+      id: "campus-hub-course-notes",
+      title: "Campus Hub – Course Notes Module",
+      description:
+        "Web-based Course Notes module for Campus Hub, enabling students to upload, search, filter, and share academic notes with peers.",
+      thumbnail: "assets/projects/CampusHubCourseNotesModule.png",
+      technologies: ["HTML5", "CSS3", "JavaScript", "JSON", "Bulma CSS"],
+      modal: {
+        overview:
+          "Campus Hub is a web-based student platform designed to centralize useful university services in a single application. As part of a team project, I developed the Course Notes module, enabling students to upload, manage, and share academic notes with their peers.",
+        problem:
+          "Students often rely on scattered platforms to exchange study materials, making it difficult to find organized and course-specific notes.",
+        solution:
+          "I developed a Course Notes module that provides a centralized space for students to upload, search, filter, and manage course notes while encouraging collaboration through comments and feedback.",
+        keyFeatures: [
+          "Upload course notes in PDF format",
+          "Search notes by course name, title, or description",
+          "Filter notes by department",
+          "Sort notes alphabetically",
+          "View detailed note information",
+          "Add and manage comments",
+          "Edit and delete notes",
+          "Pagination for easier navigation",
+          "Responsive user interface",
+        ],
+        technologies: ["HTML5", "CSS3", "JavaScript", "JSON", "Bulma CSS"],
+        contributions:
+          "Developed the complete Course Notes module, implemented searching, filtering, sorting, and pagination, built the note details page with a commenting system, developed CRUD operations for managing course notes, and integrated dynamic data retrieval and responsive UI components.",
+        challenges:
+          "Implementing dynamic filtering, pagination, and note management while maintaining a responsive and user-friendly interface.",
+        lessonsLearned:
+          "Improved skills in JavaScript, DOM manipulation, JSON data handling, responsive web design, and building interactive client-side web applications.",
+      },
+      resources: [
+        {
+          type: "github",
+          label: "GitHub Repository",
+          url: "https://github.com/NooraBumjaid/Group2-CS333.git",
         },
       ],
     },
@@ -557,6 +563,7 @@ const PORTFOLIO_DATA = {
       period: "July 2024 – August 2024",
       description:
         "Organized and coordinated ushering activities for Youth City 2030 events at the University of Bahrain.",
+      viewPath: "assets/certificates/Ushers Committee Organizer.jpeg",
     },
   ],
 

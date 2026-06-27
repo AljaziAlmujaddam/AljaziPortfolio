@@ -334,6 +334,26 @@ button {
   line-height: 1.2;
 }
 
+.section__note {
+  max-width: 640px;
+  margin: var(--space-lg) auto 0;
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.section__note a {
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.section__note a:hover {
+  color: var(--color-accent-hover);
+}
+
 /* ── Hero ────────────────────────────────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
@@ -383,8 +403,45 @@ button {
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   max-width: 520px;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
   line-height: 1.7;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  max-width: 560px;
+}
+
+.hero-stat {
+  padding: var(--space-md) var(--space-sm);
+  background: rgba(255, 255, 255, 0.72);
+  border: 2px solid var(--palette-sky);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hero-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-stat__value {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--palette-purple);
+  margin-bottom: var(--space-xs);
+}
+
+.hero-stat__label {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  line-height: 1.4;
 }
 
 .hero__actions {
@@ -1096,7 +1153,63 @@ button {
 .modal__resources-title {
   font-size: var(--text-lg);
   font-weight: 600;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+/* ── Project Page ──────────────────────────────────────────────────────────────── */
+.project-page {
+  padding-top: calc(var(--header-height) + var(--space-2xl));
+  padding-bottom: var(--space-3xl);
+  min-height: 70vh;
+}
+
+.project-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.project-page__back svg {
+  width: 18px;
+  height: 18px;
+}
+
+.project-page__back:hover {
+  color: var(--color-text);
+}
+
+.project-detail {
+  padding: var(--space-2xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-detail__thumb {
+  margin-bottom: var(--space-xl);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.project-detail__thumb img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  display: block;
+}
+
+.project-detail .modal__header {
+  padding-right: 0;
+}
+
+.project-detail .modal__section-title {
+  font-size: var(--text-lg);
 }
 
 .resources__grid {
@@ -1183,6 +1296,15 @@ button {
     margin-inline: auto;
   }
 
+  .hero__stats {
+    margin-inline: auto;
+    max-width: 100%;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
   .hero__actions {
     justify-content: center;
   }
@@ -1260,6 +1382,15 @@ button {
 
   .hero__name {
     font-size: var(--text-3xl);
+  }
+
+  .hero__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-sm);
+  }
+
+  .hero-stat__value {
+    font-size: var(--text-2xl);
   }
 
   .modal__content {
