@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Professional portfolio — projects, experience, and contact."
+      content="محفظة مهنية — مشاريع وخبرات ووسائل تواصل."
     />
-    <title>Aljazi Almujaddam Portfolio</title>
+    <title>محفظة الجازي المجدم</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,21 +18,19 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Skip link for accessibility -->
-    <a href="#home" class="skip-link" id="skip-link">Skip to content</a>
+    <a href="#home" class="skip-link" id="skip-link">انتقل إلى المحتوى</a>
 
-    <!-- Navigation -->
     <header class="header" id="header">
-      <nav class="nav container" aria-label="Main navigation">
-        <a href="#home" class="nav__logo" id="nav-logo" aria-label="Home">
+      <nav class="nav container" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav__logo" id="nav-logo" aria-label="الرئيسية">
           <img id="nav-logo-img" class="nav__logo-img" src="" alt="" width="40" height="40" />
-          <span id="nav-logo-text">Aljazi Almujaddam Portfolio</span>
+          <span id="nav-logo-text">محفظة الجازي المجدم</span>
         </a>
 
         <button
           class="nav__toggle"
           id="nav-toggle"
-          aria-label="Toggle navigation menu"
+          aria-label="فتح قائمة التنقل"
           aria-expanded="false"
         >
           <span class="nav__toggle-bar"></span>
@@ -41,40 +39,39 @@
         </button>
 
         <ul class="nav__menu" id="nav-menu">
-          <li><a href="#home" class="nav__link" id="nav-home">Home</a></li>
-          <li><a href="#about" class="nav__link" id="nav-about">About</a></li>
-          <li><a href="#courses" class="nav__link" id="nav-courses">Courses</a></li>
-          <li><a href="#skills" class="nav__link" id="nav-skills">Skills</a></li>
-          <li><a href="#projects" class="nav__link" id="nav-projects">Projects</a></li>
-          <li><a href="#certificates" class="nav__link" id="nav-certificates">Certificates</a></li>
-          <li><a href="#experience" class="nav__link" id="nav-experience">Experience</a></li>
-          <li><a href="#contact" class="nav__link" id="nav-contact">Contact</a></li>
-          <li><a href="index-ar.html" class="nav__link nav__link--lang" id="lang-switch" aria-label="Switch to Arabic">العربية</a></li>
+          <li><a href="#home" class="nav__link" id="nav-home">الرئيسية</a></li>
+          <li><a href="#about" class="nav__link" id="nav-about">نبذة عني</a></li>
+          <li><a href="#courses" class="nav__link" id="nav-courses">الدورات</a></li>
+          <li><a href="#skills" class="nav__link" id="nav-skills">المهارات</a></li>
+          <li><a href="#projects" class="nav__link" id="nav-projects">المشاريع</a></li>
+          <li><a href="#certificates" class="nav__link" id="nav-certificates">الشهادات</a></li>
+          <li><a href="#experience" class="nav__link" id="nav-experience">الخبرات</a></li>
+          <li><a href="#contact" class="nav__link" id="nav-contact">التواصل</a></li>
+          <li><a href="index.html" class="nav__link nav__link--lang" id="lang-switch" aria-label="التبديل إلى الإنجليزية">English</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- Home / Hero -->
       <section class="hero section" id="home">
         <div class="container hero__inner">
           <div class="hero__content fade-in">
-            <p class="hero__greeting" id="hero-greeting">Hello, I'm</p>
+            <p class="hero__greeting" id="hero-greeting">مرحباً، أنا</p>
             <h1 class="hero__name" id="hero-name"></h1>
             <p class="hero__title" id="hero-title"></p>
             <p class="hero__intro" id="hero-intro"></p>
-            <div class="hero__stats" id="hero-stats" aria-label="Portfolio highlights"></div>
+            <div class="hero__stats" id="hero-stats" aria-label="أبرز معالم المحفظة"></div>
             <div class="hero__actions">
-              <a href="#projects" class="btn btn--primary" id="btn-view-projects">View Projects</a>
+              <a href="#projects" class="btn btn--primary" id="btn-view-projects">عرض المشاريع</a>
               <a
                 href="#"
                 class="btn btn--secondary"
                 id="btn-cv"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View CV</a
+                >عرض السيرة الذاتية</a
               >
-              <a href="#contact" class="btn btn--outline" id="btn-contact-me">Contact Me</a>
+              <a href="#contact" class="btn btn--outline" id="btn-contact-me">تواصل معي</a>
             </div>
           </div>
           <div class="hero__image-wrapper fade-in">
@@ -82,7 +79,7 @@
               <img
                 id="hero-image"
                 src=""
-                alt="Profile photo"
+                alt="الصورة الشخصية"
                 class="hero__image"
                 width="300"
                 height="380"
@@ -91,103 +88,95 @@
           </div>
         </div>
         <div class="hero__scroll-hint" aria-hidden="true">
-          <span id="scroll-hint">Scroll</span>
+          <span id="scroll-hint">مرّر</span>
           <div class="hero__scroll-line"></div>
         </div>
       </section>
 
-      <!-- About -->
       <section class="section" id="about">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="about-label">About Me</span>
-            <h2 class="section__title" id="about-title">Who I Am</h2>
+            <span class="section__label" id="about-label">نبذة عني</span>
+            <h2 class="section__title" id="about-title">من أنا</h2>
           </header>
           <div class="about__grid">
             <div class="about__bio card fade-in">
-              <h3 class="card__title" id="about-bio-title">Biography</h3>
+              <h3 class="card__title" id="about-bio-title">السيرة الذاتية</h3>
               <div id="about-bio"></div>
             </div>
             <div class="about__education card fade-in">
-              <h3 class="card__title" id="about-edu-title">Education</h3>
+              <h3 class="card__title" id="about-edu-title">التعليم</h3>
               <div id="about-education"></div>
             </div>
             <div class="about__interests card fade-in">
-              <h3 class="card__title" id="about-interests-title">Career Interests</h3>
+              <h3 class="card__title" id="about-interests-title">الاهتمامات المهنية</h3>
               <ul class="interest-list" id="about-interests"></ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Courses -->
       <section class="section" id="courses">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="courses-label">Courses</span>
-            <h2 class="section__title" id="courses-title">Professional Development</h2>
+            <span class="section__label" id="courses-label">الدورات</span>
+            <h2 class="section__title" id="courses-title">التطوير المهني</h2>
           </header>
           <div class="courses__grid" id="courses-container"></div>
         </div>
       </section>
 
-      <!-- Skills -->
       <section class="section section--alt" id="skills">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="skills-label">Skills</span>
-            <h2 class="section__title" id="skills-title">What I Know</h2>
+            <span class="section__label" id="skills-label">المهارات</span>
+            <h2 class="section__title" id="skills-title">ما أتقنه</h2>
           </header>
           <div class="skills__grid" id="skills-container"></div>
         </div>
       </section>
 
-      <!-- Projects -->
       <section class="section" id="projects">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="projects-label">Projects</span>
-            <h2 class="section__title" id="projects-title">Featured Work</h2>
+            <span class="section__label" id="projects-label">المشاريع</span>
+            <h2 class="section__title" id="projects-title">أبرز الأعمال</h2>
             <p class="section__note" id="projects-note"></p>
           </header>
           <div class="projects__grid" id="projects-container"></div>
         </div>
       </section>
 
-      <!-- Certificates -->
       <section class="section section--alt" id="certificates">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="certificates-label">Certificates</span>
-            <h2 class="section__title" id="certificates-title">Credentials</h2>
+            <span class="section__label" id="certificates-label">الشهادات</span>
+            <h2 class="section__title" id="certificates-title">الاعتمادات</h2>
           </header>
           <div class="certificates__grid" id="certificates-container"></div>
         </div>
       </section>
 
-      <!-- Experience -->
       <section class="section" id="experience">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="experience-label">Experience</span>
-            <h2 class="section__title" id="experience-title">My Journey</h2>
+            <span class="section__label" id="experience-label">الخبرات</span>
+            <h2 class="section__title" id="experience-title">مسيرتي</h2>
           </header>
           <div class="timeline" id="experience-container"></div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section class="section section--alt" id="contact">
         <div class="container">
           <header class="section__header fade-in">
-            <span class="section__label" id="contact-label">Contact</span>
-            <h2 class="section__title" id="contact-title">Get In Touch</h2>
+            <span class="section__label" id="contact-label">التواصل</span>
+            <h2 class="section__title" id="contact-title">تواصل معي</h2>
           </header>
           <div class="contact__wrapper fade-in">
             <div class="contact__card card">
               <p class="contact__text" id="contact-text">
-                Feel free to reach out. I'm always open to discussing new
-                opportunities and collaborations.
+                لا تتردد في التواصل. أنا منفتحة دائماً لمناقشة الفرص الجديدة والتعاون.
               </p>
               <div class="contact__links" id="contact-links"></div>
             </div>
@@ -196,17 +185,16 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container footer__inner">
         <p class="footer__text">
           &copy; <span id="footer-year"></span>
-          <span id="footer-name"></span>. <span id="footer-rights">All rights reserved.</span>
+          <span id="footer-name"></span>. <span id="footer-rights">جميع الحقوق محفوظة.</span>
         </p>
       </div>
     </footer>
 
-    <script src="js/data.js"></script>
+    <script src="js/data-ar.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
