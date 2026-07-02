@@ -91,7 +91,7 @@ const PORTFOLIO_DATA = {
       "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
     profileImage: "assets/images/profile.png",
     logo: "assets/images/logo.png",
-    cvPath: "assets/cv/AljaziAliAlmujaddamResume.pdf",
+    cvPath: "assets/cv/Aljazi Almujaddam Resume English.pdf",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
       { value: "6", label: "Certificates" },
@@ -657,7 +657,7 @@ const PORTFOLIO_DATA = {
 
   /* ── Contact ─────────────────────────────────────────────────── */
   contact: {
-    email: "aljaziali04@gmail.com",
+    email: "aljazialialmujaddam@gmail.com",
     phone: "+973 3438 9145",
     linkedin: "https://www.linkedin.com/in/AljaziAlmujaddam",
     github: "https://github.com/AljaziAlmujaddam",

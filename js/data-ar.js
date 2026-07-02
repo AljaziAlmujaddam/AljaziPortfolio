@@ -85,8 +85,8 @@ const PORTFOLIO_DATA = {
     "intro": "أنا خريجة تقنية معلومات وأمن سيبراني من جامعة البحرين، وشغوفة ببناء حلول تقنية آمنة ومبتكرة. أستمتع بتعلم التقنيات الحديثة، ومواجهة التحديات الواقعية، وتنمية مهاراتي باستمرار من خلال المشاريع التطبيقية والخبرة العملية.",
     "profileImage": "assets/images/profile.png",
     "logo": "assets/images/logo.png",
-    "cvPath": "assets/cv/AljaziAliAlmujaddamResume.pdf",
-    "brandName": "محفظة الجازي المجدم",
+    "cvPath": "assets/cv/الجازي المجدم سيرة ذاتية.pdf",
+    "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
         "value": "6",
@@ -703,7 +703,7 @@ const PORTFOLIO_DATA = {
     }
   ],
   "contact": {
-    "email": "aljaziali04@gmail.com",
+    "email": "aljazialialmujaddam@gmail.com",
     "phone": "+973 3438 9145",
     "linkedin": "https://www.linkedin.com/in/AljaziAlmujaddam",
     "github": "https://github.com/AljaziAlmujaddam"
