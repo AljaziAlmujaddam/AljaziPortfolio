@@ -91,7 +91,7 @@ const PORTFOLIO_DATA = {
       "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
     profileImage: "assets/images/profile.png",
     logo: "assets/images/logo.png",
-    cvPath: "assets/cv/Aljazi Almujaddam Resume English.pdf",
+    cvPath: "https://drive.google.com/file/d/1xsNDEXaW3ytFSZmk_M2HOjqWwF5AvPF7/view?usp=sharing",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
       { value: "6", label: "Certificates" },
@@ -133,17 +133,17 @@ const PORTFOLIO_DATA = {
     {
       title: "Introduction to Cybersecurity Tools & Cyberattacks",
       provider: "IBM Coursera",
-      viewPath: "assets/certificates/Introduction to Cybersecurity Tools.pdf",
+      viewPath: "https://drive.google.com/file/d/1v_AxbO95TD6ABLKq5sc0JyRG34103bYl/view?usp=sharing",
     },
     {
       title: "Secure Software Development",
       provider: "Coursera",
-      viewPath: "assets/certificates/Secure Software Development.pdf",
+      viewPath: "https://drive.google.com/file/d/1EP1uO6T3FgptoUwu0ie1MU4x197JoPB-/view?usp=sharing",
     },
     {
       title: "Cyber Security Safety Online Awareness",
       provider: "OPS Cyber Academy – NCSC Training Program",
-      viewPath: "assets/certificates/Cyber Security Safety Online Awareness.pdf",
+      viewPath: "https://drive.google.com/file/d/1Yu7CVCg-RX81Zv9TW9uL4I7T_A1F2Yf0/view?usp=sharing",
     },
   ],
 
@@ -213,12 +213,12 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Technical Report",
-          path: "assets/resources/ShellSentry-Technical-Report.pdf",
+          url: "https://drive.google.com/file/d/1WjcF7Ez8YNvI8pKZNPuxofx9D4h643pE/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/ShellSentry presentation.pdf",
+          url: "https://drive.google.com/file/d/1UzbQ8nwpmlZPJdUnxedo0LtFhLIXyoeP/view?usp=sharing",
         },
       ],
     },
@@ -256,22 +256,22 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Risk Assessment Plan",
-          path: "assets/resources/Meridian FinTech report-Risk Assessment Plan.pdf",
+          url: "https://drive.google.com/file/d/1nE41nlhSkh7ePT9ByfjQMCFgS77PyC1N/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Risk Management Plan",
-          path: "assets/resources/Meridian FinTech report-Risk Management Plan.pdf",
+          url: "https://drive.google.com/file/d/1Aa22AKaMcuAgvzR2krxdjuZbwGNVjuiy/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Risk Mitigation Plan",
-          path: "assets/resources/Meridian FinTech report-Risk Mitigation Plan.pdf",
+          url: "https://drive.google.com/file/d/1DdU3UY04ibVMSARqOV-qM3HvTb3xfx6K/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/Meridian FinTech presentation.pdf",
+          url: "https://drive.google.com/file/d/1tCah-nCDZXqtCRdZeLIFvrTpXne47S-/view?usp=sharing",
         },
       ],
     },
@@ -309,7 +309,7 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/SijilChain presentation.pdf",
+          url: "https://drive.google.com/file/d/1xGdPcgtCJI9ZBYxEN4kTOv9TZopUtFOd/view?usp=sharing",
         },
         {
           type: "video",
@@ -352,12 +352,12 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Project Report",
-          path: "assets/resources/Tesla report.pdf",
+          url: "https://drive.google.com/file/d/1B6a5IdqdyzYreHg-F4NNN3PlTt8IuNRF/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/TESLA presentaion.pdf",
+          url: "https://drive.google.com/file/d/1YY_Z3cToEbIS879sWWUAdbCGBtkxGdfk/view?usp=sharing",
         },
       ],
     },
@@ -395,12 +395,12 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Project Report",
-          path: "assets/resources/Cyber Attack Simulation Platform report.pdf",
+          url: "https://drive.google.com/file/d/1V12Rn0mxCOeevg8LMILM7qfBSUcDjqpM/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/Cyber Attack Simulation Platform presentatin.pdf",
+          url: "https://drive.google.com/file/d/1G8Ohve2L7XvE9Dbl0Hr62kZaMcumQQur/view?usp=sharing",
         },
       ],
     },
@@ -476,12 +476,12 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Project Report",
-          path: "assets/resources/Smart Vault report.pdf",
+          url: "https://drive.google.com/file/d/1HbRgl2mup5RqMxGpB06hSwdg5ujjv3Zw/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/Smart Vault presentation.pdf",
+          url: "https://drive.google.com/file/d/1svNb9LJzoHlGjO6C17OFzwuRUmaNHVWl/view?usp=sharing",
         },
       ],
     },
@@ -560,12 +560,12 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Project Report",
-          path: "assets/resources/Travel Agency report.pdf",
+          url: "https://drive.google.com/file/d/1T--msJP_SrpCpf2EhRIQU4A-M-JJYV67/view?usp=sharing",
         },
         {
           type: "pdf",
           label: "Presentation",
-          path: "assets/resources/Travel  Agency presentation.pdf",
+          url: "https://drive.google.com/file/d/1m4mapQylt9wXc8LKvWMg1mxwl0kA92lG/view?usp=sharing",
         },
       ],
     },
@@ -578,42 +578,42 @@ const PORTFOLIO_DATA = {
       organization: "StartUp Bahrain",
       date: "May 2026",
       image: "assets/images/certificate/startUp.webp",
-      viewPath: "assets/certificates/Participation Certificate- StartUp Bahrain University of Bahrain.pdf",
+      viewPath: "https://drive.google.com/file/d/1n_8nq0yNaLM0Z12zA3MKvlQwaDwdu_UF/view?usp=sharing",
     },
     {
       title: "Participation Certificate – Al Game Day",
       organization: "Royal Academy of Police & Information & eGovernment Authority",
       date: "November 2025",
       image: "assets/images/certificate/Al Game Day.jpeg",
-      viewPath: "assets/certificates/Participation Certificate- Al Game Day.pdf",
+      viewPath: "https://drive.google.com/file/d/1Y8CBXBwZP_myxQwXUph1hGeHA9VLlKhT/view?usp=sharing",
     },
     {
       title: "Participation Certificate – The Transformative Power of Artificial Intelligence in Entrepreneurship",
       organization: "Youth City 2030",
       date: "August 2025",
       image: "assets/images/certificate/ransformative Power of Artificial Intelligence.png",
-      viewPath: "assets/certificates/The Transformative Power of Artificial Intelligence.pdf",
+      viewPath: "https://drive.google.com/file/d/1jr7kxy84VjpZl9hmCOpS_lXl0XFOjNQh/view?usp=sharing",
     },
     {
       title: "HSI Adult First Aid | CPR AED Certification",
       organization: "Sinyar Emergency",
       date: "June 2025",
       image: "assets/images/certificate/HSI Adult First Aid | CPR AED Certification Sinyar Emergency.webp",
-      viewPath: "assets/certificates/HSI Adult First Aid | CPR AED Certification.pdf",
+      viewPath: "https://drive.google.com/file/d/1aqt5LKjPwX4aRSqC-7HuRHlNsgQYj6PP/view?usp=sharing",
     },
     {
       title: "Third Place – Sh. Fadyah Alsaad Science Competition (STEAM)",
       organization: "Sh. Fadyah Alsaad Science Competition (Arab Level)",
       date: "June 2022",
       image: "assets/images/certificate/fadyah alsaad.webp",
-      viewPath: "assets/certificates/Sh. Fadyah Alsaad Science Competition.pdf",
+      viewPath: "https://drive.google.com/file/d/1WV-iTg-fpYHGCq_Oy56JrMKM6jqq5oif/view?usp=sharing",
     },
     {
       title: "First Place – Gold Category, Scientific Research Forum Competition",
       organization: "Scientific Research Forum Competition",
       date: "May 2015",
       image: "assets/images/certificate/Scientific Research Forum Competition.png",
-      viewPath: "assets/certificates/Scientific Research Forum Competition.pdf",
+      viewPath: "https://drive.google.com/file/d/1uW-3GOS1BQ8tZSIFFFN8SUTYl7megVaO/view?usp=sharing",
     },
   ],
 
@@ -642,7 +642,7 @@ const PORTFOLIO_DATA = {
       period: "October 2025",
       description:
         "Provided IT support during the Bahrain Asian Youth Games, assisting with technology operations and event infrastructure.",
-      viewPath: "assets/certificates/Bahrain Asian Youth Games (BAYG 2025).pdf",
+      viewPath: "https://drive.google.com/file/d/1qNsOKDiEe6vJXKfa3bvPbjclNIHWlVV4/view?usp=sharing",
     },
     {
       type: "volunteer",
@@ -651,7 +651,7 @@ const PORTFOLIO_DATA = {
       period: "July 2024 – August 2024",
       description:
         "Organized and coordinated ushering activities for Youth City 2030 events.",
-      viewPath: "assets/certificates/Ushers Committee Organizer.jpeg",
+      viewPath: "https://drive.google.com/file/d/1w9Eh9GdRz_cxPLr0zDG8IYnq90VL4FTG/view?usp=sharing",
     },
   ],
 

@@ -446,7 +446,9 @@
   }
 
   function toAssetUrl(path) {
-    return String(path)
+    const str = String(path);
+    if (/^https?:\/\//i.test(str)) return str;
+    return str
       .split("/")
       .map((segment) => encodeURIComponent(segment))
       .join("/");
