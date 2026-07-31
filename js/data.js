@@ -633,7 +633,7 @@ const PORTFOLIO_DATA = {
       organization: "Youth City 2030",
       period: "July 2026 – August 2026",
       description:
-        "Organized and coordinated ushering activities for Youth City 2030 events. Created an Excel sheet to collect visitor information and built a system to track each visitor's time on-site, helping the team easily monitor how many visitors were inside, who had left, and who exceeded their allotted time for follow-up communication.",
+        "Organized and coordinated ushering activities for Youth City 2030 events. Developed digital tools to streamline visitor registration and tracking for Youth City 2030 events, reducing manual administrative work through automation. Designed and implemented a Google Forms registration system integrated with Google Sheets and Google Apps Script to automate daily ticket availability, enforce visitor capacity limits, and maintain registration records. Built a lightweight, privacy-focused visitor tracking system using unique visitor IDs instead of personal information, with real-time occupancy monitoring, 45-minute session timers, interactive visitor cards, automated warnings (15 minutes remaining), overtime alerts, and live tracking of available visitor slots.",
     },
     {
       type: "event",
