@@ -89,7 +89,7 @@ const PORTFOLIO_DATA = {
     title: "IT & Cybersecurity",
     intro:
       "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
-    profileImage: "assets/images/profile.png",
+    profileImage: "assets/images/profile.JPG",
     logo: "assets/images/logo.png",
     cvPath: "https://drive.google.com/file/d/1xsNDEXaW3ytFSZmk_M2HOjqWwF5AvPF7/view?usp=sharing",
     brandName: "Aljazi Almujaddam Portfolio",
@@ -626,6 +626,14 @@ const PORTFOLIO_DATA = {
       period: "June 2026 – August 2026",
       description:
         "Assisted in administrative and operational tasks within a governmental environment. Supported organization and management of official documents, prepared correspondence and reports, and gained exposure to compliance standards and formal workplace procedures.",
+    },
+    {
+      type: "volunteer",
+      title: "Ushers Committee Organizer",
+      organization: "Youth City 2030",
+      period: "July 2026 – August 2026",
+      description:
+        "Organized and coordinated ushering activities for Youth City 2030 events. Created an Excel sheet to collect visitor information and built a system to track each visitor's time on-site, helping the team easily monitor how many visitors were inside, who had left, and who exceeded their allotted time for follow-up communication.",
     },
     {
       type: "event",
