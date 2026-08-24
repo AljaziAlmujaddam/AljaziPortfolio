@@ -91,7 +91,7 @@ const PORTFOLIO_DATA = {
       "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
     profileImage: "assets/images/profile.JPG",
     logo: "assets/images/logo.png",
-    cvPath: "https://drive.google.com/file/d/1sKkS_XLcHj2nsEImLT4B83u_NJGIuXMi/view?usp=share_link",
+    cvPath: "https://drive.google.com/file/d/1r1-8Ovk4AIrwk3sTQcs3gp5gj1enTBqO/view?usp=share_link",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
       { value: "6", label: "Certificates" },
@@ -166,7 +166,7 @@ const PORTFOLIO_DATA = {
     },
     {
       category: "Tools & Platforms",
-      items: ["GitHub", "Database Management"],
+      items: ["Version Control & Repository Hosting", "Database Management"],
     },
     {
       category: "Soft Skills",

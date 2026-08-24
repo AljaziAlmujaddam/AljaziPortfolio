@@ -85,7 +85,7 @@ const PORTFOLIO_DATA = {
     "intro": "أنا خريجة تقنية معلومات وأمن سيبراني من جامعة البحرين، وشغوفة ببناء حلول تقنية آمنة ومبتكرة. أستمتع بتعلم التقنيات الحديثة، ومواجهة التحديات الواقعية، وتنمية مهاراتي باستمرار من خلال المشاريع التطبيقية والخبرة العملية.",
     "profileImage": "assets/images/profile.JPG",
     "logo": "assets/images/logo.png",
-    "cvPath": "https://drive.google.com/file/d/1y5c9MTn0e2i3O0ah-fnoncNTV7VGlf3g/view?usp=share_link",
+    "cvPath": "https://drive.google.com/file/d/16okhHwENvDJMVT5yK5mc-o0ip_S0yCAj/view?usp=share_link",
     "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
@@ -171,7 +171,7 @@ const PORTFOLIO_DATA = {
     {
       "category": "الأدوات والمنصات",
       "items": [
-        "GitHub",
+        "Version Control & Repository Hosting",
         "إدارة قواعد البيانات"
       ]
     },
