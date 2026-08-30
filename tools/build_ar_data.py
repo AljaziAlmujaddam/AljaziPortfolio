@@ -53,6 +53,7 @@ PORTFOLIO_DATA = {
     "footerRights": "جميع الحقوق محفوظة.",
     "btnViewProject": "عرض المشروع",
     "btnViewCertificate": "عرض الشهادة",
+    "btnViewDemo": "عرض تجريبي",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "emptySkills": "ستظهر المهارات هنا عند إضافتها.",
@@ -90,7 +91,7 @@ PORTFOLIO_DATA = {
     "intro": "أنا خريجة تقنية معلومات وأمن سيبراني من جامعة البحرين، وشغوفة ببناء حلول تقنية آمنة ومبتكرة. أستمتع بتعلم التقنيات الحديثة، ومواجهة التحديات الواقعية، وتنمية مهاراتي باستمرار من خلال المشاريع التطبيقية والخبرة العملية.",
     "profileImage": "assets/images/profile.JPG",
     "logo": "assets/images/logo.png",
-    "cvPath": "https://drive.google.com/file/d/1lGQgGo5SRRyNjeYcH5Zxl_klqumJ8ZUF/view?usp=share_link",
+    "cvPath": "https://drive.google.com/file/d/1bpeqaR3J21JWb53lyg1vwHsimLHRaZ4v/view?usp=share_link",
     "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
@@ -301,7 +302,7 @@ PORTFOLIO_DATA = {
         {
           "type": "pdf",
           "label": "العرض التقديمي",
-          "url": "https://drive.google.com/file/d/1tCah-nCDZXqtCRdZeLIFvrTpXne47S-/view?usp=sharing"
+          "url": "https://drive.google.com/file/d/1tCah-nCDZXqtCRdZeLIFvrTpXne47S-_/view?usp=share_link"
         }
       ]
     },
@@ -688,7 +689,9 @@ PORTFOLIO_DATA = {
       "title": "منظمة لجنة أرض موقع",
       "organization": "مدينة الشباب 2030",
       "period": "يوليو 2026 – أغسطس 2026",
-      "description": "نظّمت ونسّقت أنشطة لجنة أرض موقع لفعاليات مدينة الشباب 2030. طوّرت أدوات رقمية لتبسيط تسجيل الزوار وتتبعهم في فعاليات مدينة الشباب 2030، مما قلّل العمل الإداري اليدوي من خلال الأتمتة. صمّمت ونفّذت نظام تسجيل عبر Google Forms متكامل مع Google Sheets وGoogle Apps Script لأتمتة توفر التذاكر اليومية، وفرض حدود السعة للزوار، والاحتفاظ بسجلات التسجيل. بنيت نظاماً خفيفاً يركز على الخصوصية لتتبع الزوار باستخدام معرّفات فريدة بدلاً من المعلومات الشخصية، مع مراقبة الإشغال في الوقت الفعلي، ومؤقتات جلسات مدتها 45 دقيقة، وبطاقات زوار تفاعلية، وتنبيهات آلية (15 دقيقة متبقية)، وتنبيهات تجاوز الوقت، وتتبع مباشر للمواقع المتاحة للزوار."
+      "description": "نظّمت ونسّقت أنشطة لجنة أرض موقع لفعاليات مدينة الشباب 2030. طوّرت أدوات رقمية لتبسيط تسجيل الزوار وتتبعهم في فعاليات مدينة الشباب 2030، مما قلّل العمل الإداري اليدوي من خلال الأتمتة. صمّمت ونفّذت نظام تسجيل عبر Google Forms متكامل مع Google Sheets وGoogle Apps Script لأتمتة توفر التذاكر اليومية، وفرض حدود السعة للزوار، والاحتفاظ بسجلات التسجيل. بنيت نظاماً خفيفاً يركز على الخصوصية لتتبع الزوار باستخدام معرّفات فريدة بدلاً من المعلومات الشخصية، مع مراقبة الإشغال في الوقت الفعلي، ومؤقتات جلسات مدتها 45 دقيقة، وبطاقات زوار تفاعلية، وتنبيهات آلية (15 دقيقة متبقية)، وتنبيهات تجاوز الوقت، وتتبع مباشر للمواقع المتاحة للزوار.",
+      "viewPath": "https://drive.google.com/file/d/1haq96TZs68l4wAPa3oUByT0gTPJ_RetU/view?usp=share_link",
+      "demoPath": "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link"
     },
     {
       "type": "event",

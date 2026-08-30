@@ -52,6 +52,7 @@ const PORTFOLIO_DATA = {
     footerRights: "All rights reserved.",
     btnViewProject: "View Project",
     btnViewCertificate: "View Certificate",
+    btnViewDemo: "View Demo",
     linkedin: "LinkedIn",
     github: "GitHub",
     emptySkills: "Skills will appear here once added.",
@@ -91,7 +92,7 @@ const PORTFOLIO_DATA = {
       "I'm an IT and Cybersecurity graduate from the University of Bahrain with a passion for building secure and innovative technology solutions. I enjoy learning new technologies, tackling real-world challenges, and continuously growing my skills through hands-on projects and practical experience.",
     profileImage: "assets/images/profile.JPG",
     logo: "assets/images/logo.png",
-    cvPath: "https://drive.google.com/file/d/15OaS56mKMmjA9uvjouSgmnxut9nyABXy/view?usp=share_link",
+    cvPath: "https://drive.google.com/file/d/19s07lC7-jWxQSKjaI6XeR3jShUq2KLCr/view?usp=share_link",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
       { value: "6", label: "Certificates" },
@@ -271,7 +272,7 @@ const PORTFOLIO_DATA = {
         {
           type: "pdf",
           label: "Presentation",
-          url: "https://drive.google.com/file/d/1tCah-nCDZXqtCRdZeLIFvrTpXne47S-/view?usp=sharing",
+          url: "https://drive.google.com/file/d/1tCah-nCDZXqtCRdZeLIFvrTpXne47S-_/view?usp=share_link",
         },
       ],
     },
@@ -634,6 +635,8 @@ const PORTFOLIO_DATA = {
       period: "July 2026 – August 2026",
       description:
         "Organized and coordinated ushering activities for Youth City 2030 events. Developed digital tools to streamline visitor registration and tracking for Youth City 2030 events, reducing manual administrative work through automation. Designed and implemented a Google Forms registration system integrated with Google Sheets and Google Apps Script to automate daily ticket availability, enforce visitor capacity limits, and maintain registration records. Built a lightweight, privacy-focused visitor tracking system using unique visitor IDs instead of personal information, with real-time occupancy monitoring, 45-minute session timers, interactive visitor cards, automated warnings (15 minutes remaining), overtime alerts, and live tracking of available visitor slots.",
+      viewPath: "https://drive.google.com/file/d/1haq96TZs68l4wAPa3oUByT0gTPJ_RetU/view?usp=share_link",
+      demoPath: "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link",
     },
     {
       type: "event",

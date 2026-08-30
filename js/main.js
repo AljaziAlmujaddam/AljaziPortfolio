@@ -379,13 +379,29 @@
           <p class="timeline-item__period">${escapeHtml(item.period)}</p>
           <p class="timeline-item__desc">${escapeHtml(item.description)}</p>
           ${
-            item.viewPath
-              ? `<a
+            item.viewPath || item.demoPath
+              ? `<div class="timeline-item__actions">
+            ${
+              item.viewPath
+                ? `<a
             href="${escapeAttr(toAssetUrl(item.viewPath))}"
             class="btn btn--secondary btn--small timeline-item__link"
             target="_blank"
             rel="noopener noreferrer"
           >${escapeHtml(ui.btnViewCertificate)}</a>`
+                : ""
+            }
+            ${
+              item.demoPath
+                ? `<a
+            href="${escapeAttr(toAssetUrl(item.demoPath))}"
+            class="btn btn--secondary btn--small timeline-item__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >${escapeHtml(ui.btnViewDemo)}</a>`
+                : ""
+            }
+          </div>`
               : ""
           }
         </div>`

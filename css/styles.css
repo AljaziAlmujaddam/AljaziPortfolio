@@ -924,6 +924,12 @@ button {
   margin-bottom: var(--space-md);
 }
 
+.timeline-item__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
 .timeline-item__link {
   display: inline-flex;
 }
