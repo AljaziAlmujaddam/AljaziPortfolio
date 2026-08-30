@@ -108,7 +108,7 @@ const PORTFOLIO_DATA = {
       "Technology has always inspired me to explore how innovative ideas can become practical solutions. As an IT and Cybersecurity graduate, I enjoy designing and developing systems that combine functionality, security, and usability.\n\nThroughout my academic journey, I have worked on projects covering cybersecurity, secure software development, artificial intelligence, networking, databases, and web technologies. These experiences have strengthened my technical foundation while teaching me the importance of collaboration, continuous learning, and attention to detail.\n\nI am passionate about expanding my knowledge, embracing new challenges, and building solutions that create real value. My goal is to continue growing as a technology professional while contributing to meaningful and impactful projects.",
     education: [
       {
-        degree: "Bachelor of Cybersecurity",
+        degree: "Bachelor of Science in Cybersecurity",
         institution: "University of Bahrain",
         period: "September 2022 – August 2026",
         details: "Zallaq, Bahrain",
@@ -167,7 +167,7 @@ const PORTFOLIO_DATA = {
     },
     {
       category: "Tools & Platforms",
-      items: ["GitHub", "Database Management"],
+      items: ["Version Control & Repository Hosting", "Database Management"],
     },
     {
       category: "Soft Skills",
@@ -626,7 +626,8 @@ const PORTFOLIO_DATA = {
       organization: "Ministry of Interior",
       period: "June 2026 – August 2026",
       description:
-        "Assisted in administrative and operational tasks within a governmental environment. Supported organization and management of official documents, prepared correspondence and reports, and gained exposure to compliance standards and formal workplace procedures.",
+        "During my internship at the Ministry of Interior – Administrative Affairs Department, Legal Affairs Section, I gained practical experience in information management, electronic archiving, statistical reporting, and asset inventory. I worked with Excel, Access, PowerPoint, Oracle, and CFS, while developing an understanding of confidentiality and secure information handling. I also contributed to reorganizing and updating asset records to improve their accuracy and consistency.",
+      viewPath: "https://drive.google.com/file/d/1xD9DLJ73ttecwuV-ZsoIGt4CsSe0kvO-/view?usp=share_link",
     },
     {
       type: "volunteer",
