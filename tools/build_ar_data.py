@@ -19,6 +19,8 @@ PORTFOLIO_DATA = {
     "navSkills": "المهارات",
     "navProjects": "المشاريع",
     "navCertificates": "الشهادات",
+    "navLicense": "الرخصة",
+    "navAwards": "الجوائز",
     "navExperience": "الخبرات",
     "navContact": "التواصل",
     "langSwitch": "English",
@@ -45,6 +47,10 @@ PORTFOLIO_DATA = {
     "projectsTitle": "أبرز الأعمال",
     "certificatesLabel": "الشهادات",
     "certificatesTitle": "الاعتمادات",
+    "licensesLabel": "الرخصة",
+    "licensesTitle": "التراخيص",
+    "awardsLabel": "الجوائز",
+    "awardsTitle": "التكريمات",
     "experienceLabel": "الخبرات",
     "experienceTitle": "مسيرتي",
     "contactLabel": "التواصل",
@@ -53,12 +59,18 @@ PORTFOLIO_DATA = {
     "footerRights": "جميع الحقوق محفوظة.",
     "btnViewProject": "عرض المشروع",
     "btnViewCertificate": "عرض الشهادة",
+    "btnViewAward": "عرض الجائزة",
+    "btnViewLicense": "عرض الرخصة",
+    "statusInProgress": "قيد الإنجاز",
+    "btnViewDegree": "عرض الشهادة",
     "btnViewDemo": "عرض تجريبي",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "emptySkills": "ستظهر المهارات هنا عند إضافتها.",
     "emptyProjects": "ستظهر المشاريع هنا عند إضافتها.",
     "emptyCertificates": "ستظهر الشهادات هنا عند إضافتها.",
+    "emptyLicenses": "ستظهر الرخص هنا عند إضافتها.",
+    "emptyAwards": "ستظهر الجوائز هنا عند إضافتها.",
     "emptyCourses": "ستظهر الدورات هنا عند إضافتها.",
     "emptyExperience": "ستظهر الخبرات هنا عند إضافتها.",
     "experienceLabels": {
@@ -95,15 +107,15 @@ PORTFOLIO_DATA = {
     "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
-        "value": "6",
+        "value": "4",
         "label": "شهادات"
       },
       {
-        "value": "9",
+        "value": "10",
         "label": "مشاريع"
       },
       {
-        "value": "3",
+        "value": "10",
         "label": "دورات"
       },
       {
@@ -116,10 +128,11 @@ PORTFOLIO_DATA = {
     "biography": "لطالما ألهمتني التقنية لاستكشاف كيفية تحويل الأفكار المبتكرة إلى حلول عملية. وبصفتي خريجة تقنية معلومات وأمن سيبراني، أستمتع بتصميم وتطوير أنظمة تجمع بين الوظيفة والأمان وسهولة الاستخدام.\n\nوخلال مسيرتي الأكاديمية، عملت على مشاريع تغطي الأمن السيبراني، وتطوير البرمجيات الآمنة، والذكاء الاصطناعي، والشبكات، وقواعد البيانات، وتقنيات الويب. عزّزت هذه التجارب أساسي التقني، وعلّمتني أهمية التعاون والتعلم المستمر والاهتمام بالتفاصيل.\n\nأنا شغوفة بتوسيع معرفتي، ومواجهة التحديات الجديدة، وبناء حلول تخلق قيمة حقيقية. هدفي أن أواصل النمو كمتخصصة في مجال التقنية مع المساهمة في مشاريع ذات أثر ومعنى.",
     "education": [
       {
-        "degree": "بكالوريوس الأمن السيبراني",
+        "degree": "بكالوريوس العلوم في الأمن السيبراني",
         "institution": "جامعة البحرين",
         "period": "سبتمبر 2022 – أغسطس 2026",
-        "details": "زلاق، البحرين"
+        "details": "زلاق، البحرين",
+        "viewPath": "https://drive.google.com/file/d/1PWufnMR61vBxLiLx9plVW2xjIRxdB7Ie/view?usp=share_link"
       },
       {
         "degree": "شهادة الثانوية العامة",
@@ -151,6 +164,41 @@ PORTFOLIO_DATA = {
       "title": "الوعي بسلامة الأمن السيبراني على الإنترنت",
       "provider": "OPS Cyber Academy – برنامج تدريب NCSC",
       "viewPath": "https://drive.google.com/file/d/1Yu7CVCg-RX81Zv9TW9uL4I7T_A1F2Yf0/view?usp=sharing"
+    },
+    {
+      "title": "سوليدتي للمبتدئين: كتابة واختبار العقود الذكية",
+      "provider": "Coursera",
+      "viewPath": "https://drive.google.com/file/d/1658qQU5-Q37lY_xN77FoyoBb7Vs_yb02/view?usp=sharing"
+    },
+    {
+      "title": "التحقيق الرقمي لسجل ويندوز",
+      "provider": "Infosec Coursera",
+      "viewPath": "https://drive.google.com/file/d/1AT3QQzzOjf59MCcngP33tdZwwr5U1f9v/view?usp=sharing"
+    },
+    {
+      "title": "اختبار أمن تطبيقات الويب باستخدام OWASP ZAP",
+      "provider": "Coursera",
+      "viewPath": "https://drive.google.com/file/d/1wS2dSxo8rwSZCXWaB6JvrRqLFRPUiR6z/view?usp=sharing"
+    },
+    {
+      "title": "كيفية تأمين جهاز الشبكة باستخدام Cisco Packet Tracer",
+      "provider": "Coursera Project Network",
+      "viewPath": "https://drive.google.com/file/d/1PAPuaXbN7-yYn4TrpelJpBbBTHBnilYC/view?usp=sharing"
+    },
+    {
+      "title": "إدارة المشاريع: كيفية إنشاء مخطط جانت في Wrike",
+      "provider": "Coursera Project Network",
+      "viewPath": "https://drive.google.com/file/d/1kcIklRHhVggs4GmTgO6I51_5O1KGt6Kz/view?usp=sharing"
+    },
+    {
+      "title": "البدء مع Wrike",
+      "provider": "Coursera Project Network",
+      "viewPath": "https://drive.google.com/file/d/1_5UIbyu4XWf7CeYV5lW4BAgJDSO4q2C1/view?usp=sharing"
+    },
+    {
+      "title": "خريجة AWS Academy – أساسيات أمن السحابة",
+      "provider": "AWS Academy",
+      "viewPath": "https://drive.google.com/file/d/12KUUuH7WeoXgDLmYfIuzcs2CAsX54v7i/view?usp=sharing"
     }
   ],
   "skills": [
@@ -193,6 +241,56 @@ PORTFOLIO_DATA = {
   ],
   "projectsNote": "يعرض هذا القسم مجموعة مختارة من أبرز مشاريعي. عملتُ على مشاريع إضافية غير معروضة هنا — يرجى <a href=\"#contact\">التواصل معي</a> إذا رغبتِ في معرفة المزيد.",
   "projects": [
+    {
+      "id": "youth-city-visitor-tracking",
+      "title": "مدينة الشباب 2030 – نظام تسجيل الزوار وتتبعهم",
+      "description": "نظام زوار من جزأين لمدينة الشباب 2030: تطبيقات Google للتسجيل والتذاكر اليومية والسعة، وموقع مباشر يوقّت زيارات الـ45 دقيقة عبر جميع المداخل.",
+      "thumbnail": "assets/images/certificate/ransformative Power of Artificial Intelligence.png",
+      "technologies": [
+        "Google Apps Script",
+        "Google Forms",
+        "HTML/CSS/JavaScript",
+        "Firebase"
+      ],
+      "modal": {
+        "overview": "أثناء تنظيم لجنة أرض الموقع في مدينة الشباب 2030 (يوليو 2026 – أغسطس 2026)، بنيت نظام تشغيل الزوار كاملاً. تتولى Google Apps Script وForms وSheets التسجيل والسعة قبل الدخول، ثم يتتبع موقع لوحة مؤقت الزوار كل زيارة مدتها 45 دقيقة بشكل مباشر عبر جميع المداخل.",
+        "problem": "كان تسجيل الزوار ومعرفة من بالداخل يتمان يدوياً. صعُب فرض السعة، ولم تكن المداخل ترى المعلومات نفسها، واحتاج الفريق إلى بيانات شخصية لمجرد معرفة من في الموقع ومتى تنتهي زيارته.",
+        "solution": "ربطت Google Forms بـ Google Sheets عبر Apps Script لتحديث توفر التذاكر اليومية وحدود السعة وسجلات التسجيل تلقائياً، باستخدام معرّفات زوار فريدة بدلاً من المعلومات الشخصية. وفي الموقع، تبدأ لوحة مؤقت الزوار جلسة مدتها 45 دقيقة من أحد مدخلين ورقم بطاقة الزائر، وتنبّه الفريق عند بقاء 15 دقيقة، وتُظهر تجاوز الوقت، وتقفل البطاقة المستخدمة حتى اليوم التالي، وتُزامن فترتي الصباح والليل مع كل المداخل عبر Firebase.",
+        "keyFeatures": [
+          "تسجيل عبر Google Forms مرتبط بـ Google Sheets",
+          "أتمتة Apps Script للتذاكر اليومية وحدود السعة",
+          "سجلات تسجيل بمعرّفات زوار فريدة",
+          "لوحة مؤقت زوار لزيارات مدتها 45 دقيقة",
+          "تشغيل منفصل لفترتي الصباح والليل",
+          "100 بطاقة زائر مع إمكانية إضافة بطاقات إضافية",
+          "اختيار أحد مدخلين",
+          "بحث برقم بطاقة الزائر وتصفية حسب الحالة",
+          "عدادات مباشرة للداخل والمتبقي 15 دقيقة وتجاوز الوقت والمستخدَم والمتاح",
+          "تنبيهات صوتية وإشعارات سطح المكتب",
+          "قفل البطاقة حتى اليوم التالي بعد الزيارة",
+          "مزامنة مباشرة بين المداخل عبر Firebase Realtime Database"
+        ],
+        "technologies": [
+          "Google Forms",
+          "Google Sheets",
+          "Google Apps Script",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Firebase Realtime Database"
+        ],
+        "contributions": "نظّمت أعمال لجنة أرض الموقع في مدينة الشباب 2030 وبنيت جزأي النظام: مسار التسجيل والسعة في تطبيقات Google، ولوحة مؤقت الزوار متعددة المداخل بما فيها المؤقتات والتنبيهات وقفل البطاقات والمزامنة المباشرة.",
+        "challenges": "فرض السعة دون تخزين المعلومات الشخصية، وإبقاء كل المداخل على لوحة مباشرة واحدة خلال فترتي الصباح والليل حتى لا تُعاد استخدام البطاقة في اليوم نفسه.",
+        "lessonsLearned": "فصل التسجيل في تطبيقات Google عن توقيت الزيارة في الموقع جعل الدخول أسرع وأعطى كل مدخل عرضاً مشتركاً لمن بالداخل ومن اقترب من حد الـ45 دقيقة وأي البطاقات ما زالت متاحة."
+      },
+      "resources": [
+        {
+          "type": "video",
+          "label": "عرض تجريبي",
+          "url": "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link"
+        }
+      ]
+    },
     {
       "id": "shellsentry",
       "title": "ShellSentry – منصة آمنة لتحويل اللغة الطبيعية إلى أوامر Bash وتنفيذها",
@@ -634,6 +732,13 @@ PORTFOLIO_DATA = {
   ],
   "certificates": [
     {
+      "title": "شهادة إنجاز – متطوعة الأمم المتحدة، مدينة الشباب البحرين 2030",
+      "organization": "متطوعو الأمم المتحدة (UNV)",
+      "date": "يوليو 2026 – أغسطس 2026",
+      "image": "assets/images/certificate/UN Voulnteer.png",
+      "viewPath": "https://drive.google.com/file/d/1hvw0wBHxRzS85kKmGBRm2UexklBm_8OZ/view?usp=share_link"
+    },
+    {
       "title": "شهادة مشاركة – StartUp Bahrain",
       "organization": "StartUp Bahrain",
       "date": "مايو 2026",
@@ -653,7 +758,9 @@ PORTFOLIO_DATA = {
       "date": "أغسطس 2025",
       "image": "assets/images/certificate/ransformative Power of Artificial Intelligence.png",
       "viewPath": "https://drive.google.com/file/d/1jr7kxy84VjpZl9hmCOpS_lXl0XFOjNQh/view?usp=sharing"
-    },
+    }
+  ],
+  "licenses": [
     {
       "title": "شهادة الإسعافات الأولية للبالغين | CPR AED – HSI",
       "organization": "سنيار للطوارئ",
@@ -661,6 +768,15 @@ PORTFOLIO_DATA = {
       "image": "assets/images/certificate/HSI Adult First Aid | CPR AED Certification Sinyar Emergency.webp",
       "viewPath": "https://drive.google.com/file/d/1aqt5LKjPwX4aRSqC-7HuRHlNsgQYj6PP/view?usp=sharing"
     },
+    {
+      "title": "أخصائية شبكات معتمدة من سيسكو (CCNA) – الأمن السيبراني",
+      "organization": "Cisco",
+      "date": "قيد الإنجاز",
+      "image": "assets/images/certificate/cisco_ccna_security.png",
+      "inProgress": true
+    }
+  ],
+  "awards": [
     {
       "title": "المركز الثالث – مسابقة الشيخة فادية السعد العلمية (STEAM)",
       "organization": "مسابقة الشيخة فادية السعد العلمية (المستوى العربي)",
@@ -793,6 +909,8 @@ def write_index_ar() -> None:
           <li><a href="#skills" class="nav__link" id="nav-skills">{ui['navSkills']}</a></li>
           <li><a href="#projects" class="nav__link" id="nav-projects">{ui['navProjects']}</a></li>
           <li><a href="#certificates" class="nav__link" id="nav-certificates">{ui['navCertificates']}</a></li>
+          <li><a href="#license" class="nav__link" id="nav-license">{ui['navLicense']}</a></li>
+          <li><a href="#awards" class="nav__link" id="nav-awards">{ui['navAwards']}</a></li>
           <li><a href="#experience" class="nav__link" id="nav-experience">{ui['navExperience']}</a></li>
           <li><a href="#contact" class="nav__link" id="nav-contact">{ui['navContact']}</a></li>
           <li><a href="index.html" class="nav__link nav__link--lang" id="lang-switch" aria-label="{ui['langSwitchAria']}">{ui['langSwitch']}</a></li>
@@ -905,6 +1023,26 @@ def write_index_ar() -> None:
         </div>
       </section>
 
+      <section class="section" id="license">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label" id="licenses-label">{ui['licensesLabel']}</span>
+            <h2 class="section__title" id="licenses-title">{ui['licensesTitle']}</h2>
+          </header>
+          <div class="licenses__grid" id="licenses-container"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="awards">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label" id="awards-label">{ui['awardsLabel']}</span>
+            <h2 class="section__title" id="awards-title">{ui['awardsTitle']}</h2>
+          </header>
+          <div class="awards__grid" id="awards-container"></div>
+        </div>
+      </section>
+
       <section class="section" id="experience">
         <div class="container">
           <header class="section__header fade-in">
@@ -942,8 +1080,8 @@ def write_index_ar() -> None:
       </div>
     </footer>
 
-    <script src="js/data-ar.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/data-ar.js?v=ccna"></script>
+    <script src="js/main.js?v=ccna"></script>
   </body>
 </html>
 """

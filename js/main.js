@@ -41,6 +41,8 @@
     setText("nav-skills", ui.navSkills);
     setText("nav-projects", ui.navProjects);
     setText("nav-certificates", ui.navCertificates);
+    setText("nav-license", ui.navLicense);
+    setText("nav-awards", ui.navAwards);
     setText("nav-experience", ui.navExperience);
     setText("nav-contact", ui.navContact);
     setText("hero-greeting", ui.heroGreeting);
@@ -61,6 +63,10 @@
     setText("projects-title", ui.projectsTitle);
     setText("certificates-label", ui.certificatesLabel);
     setText("certificates-title", ui.certificatesTitle);
+    setText("licenses-label", ui.licensesLabel);
+    setText("licenses-title", ui.licensesTitle);
+    setText("awards-label", ui.awardsLabel);
+    setText("awards-title", ui.awardsTitle);
     setText("experience-label", ui.experienceLabel);
     setText("experience-title", ui.experienceTitle);
     setText("contact-label", ui.contactLabel);
@@ -207,6 +213,16 @@
           <p class="education-item__institution">${escapeHtml(edu.institution)}</p>
           <p class="education-item__period">${escapeHtml(edu.period)}</p>
           ${edu.details ? `<p class="education-item__details">${escapeHtml(edu.details)}</p>` : ""}
+          ${
+            edu.viewPath
+              ? `<a
+            href="${escapeAttr(toAssetUrl(edu.viewPath))}"
+            class="btn btn--secondary btn--small education-item__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >${escapeHtml(ui.btnViewDegree || ui.btnViewCertificate)}</a>`
+              : ""
+          }
         </div>`
       )
       .join("");
@@ -288,34 +304,40 @@
     container.querySelectorAll(".fade-in").forEach((el) => scrollObserver.observe(el));
   }
 
-  /* ── Render: Certificates ────────────────────────────────────────────────────── */
-  function renderCertificates() {
-    const container = document.getElementById("certificates-container");
+  /* ── Render: Certificates & Awards ───────────────────────────────────────────── */
+  function renderCredentialCards(items, containerId, emptyText, buttonLabel) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-    if (!data.certificates.length) {
-      container.innerHTML = `<p class="empty-state">${escapeHtml(ui.emptyCertificates)}</p>`;
+    if (!items || !items.length) {
+      container.innerHTML = `<p class="empty-state">${escapeHtml(emptyText)}</p>`;
       return;
     }
 
-    container.innerHTML = data.certificates
+    container.innerHTML = items
       .map(
-        (cert) => `
+        (item) => `
         <article class="certificate-card fade-in">
           <div class="certificate-card__image">
-            <img src="${escapeAttr(toAssetUrl(cert.image))}" alt="${escapeAttr(cert.title)}" loading="lazy" />
+            <img src="${escapeAttr(toAssetUrl(item.image))}" alt="${escapeAttr(item.title)}" loading="lazy" />
+            ${
+              item.inProgress
+                ? `<span class="certificate-card__badge">${escapeHtml(ui.statusInProgress || "In Progress")}</span>`
+                : ""
+            }
           </div>
           <div class="certificate-card__body">
-            <h3 class="certificate-card__title">${escapeHtml(cert.title)}</h3>
-            <p class="certificate-card__org">${escapeHtml(cert.organization)}</p>
-            <p class="certificate-card__date">${escapeHtml(cert.date)}</p>
+            <h3 class="certificate-card__title">${escapeHtml(item.title)}</h3>
+            <p class="certificate-card__org">${escapeHtml(item.organization)}</p>
+            <p class="certificate-card__date">${escapeHtml(item.date)}</p>
             ${
-              cert.viewPath
+              item.viewPath
                 ? `<a
-              href="${escapeAttr(toAssetUrl(cert.viewPath))}"
+              href="${escapeAttr(toAssetUrl(item.viewPath))}"
               class="btn btn--secondary btn--small"
               target="_blank"
               rel="noopener noreferrer"
-            >${escapeHtml(ui.btnViewCertificate)}</a>`
+            >${escapeHtml(buttonLabel)}</a>`
                 : ""
             }
           </div>
@@ -324,6 +346,28 @@
       .join("");
 
     container.querySelectorAll(".fade-in").forEach((el) => scrollObserver.observe(el));
+  }
+
+  function renderCertificates() {
+    renderCredentialCards(
+      data.certificates,
+      "certificates-container",
+      ui.emptyCertificates,
+      ui.btnViewCertificate
+    );
+  }
+
+  function renderLicenses() {
+    renderCredentialCards(
+      data.licenses,
+      "licenses-container",
+      ui.emptyLicenses,
+      ui.btnViewLicense || ui.btnViewCertificate
+    );
+  }
+
+  function renderAwards() {
+    renderCredentialCards(data.awards, "awards-container", ui.emptyAwards, ui.btnViewAward);
   }
 
   /* ── Render: Courses ─────────────────────────────────────────────────────────── */
@@ -493,6 +537,8 @@
     renderSkills();
     renderProjects();
     renderCertificates();
+    renderLicenses();
+    renderAwards();
     renderExperience();
     renderContact();
     initNavigation();

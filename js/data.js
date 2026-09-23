@@ -17,6 +17,8 @@ const PORTFOLIO_DATA = {
     navSkills: "Skills",
     navProjects: "Projects",
     navCertificates: "Certificates",
+    navLicense: "License",
+    navAwards: "Awards",
     navExperience: "Experience",
     navContact: "Contact",
     langSwitch: "العربية",
@@ -43,6 +45,10 @@ const PORTFOLIO_DATA = {
     projectsTitle: "Featured Work",
     certificatesLabel: "Certificates",
     certificatesTitle: "Credentials",
+    licensesLabel: "License",
+    licensesTitle: "Licensure",
+    awardsLabel: "Awards",
+    awardsTitle: "Honors",
     experienceLabel: "Experience",
     experienceTitle: "My Journey",
     contactLabel: "Contact",
@@ -52,12 +58,18 @@ const PORTFOLIO_DATA = {
     footerRights: "All rights reserved.",
     btnViewProject: "View Project",
     btnViewCertificate: "View Certificate",
+    btnViewAward: "View Award",
+    btnViewLicense: "View License",
+    statusInProgress: "In Progress",
+    btnViewDegree: "View Degree",
     btnViewDemo: "View Demo",
     linkedin: "LinkedIn",
     github: "GitHub",
     emptySkills: "Skills will appear here once added.",
     emptyProjects: "Projects will appear here once added.",
     emptyCertificates: "Certificates will appear here once added.",
+    emptyLicenses: "Licenses will appear here once added.",
+    emptyAwards: "Awards will appear here once added.",
     emptyCourses: "Courses will appear here once added.",
     emptyExperience: "Experience will appear here once added.",
     experienceLabels: {
@@ -95,9 +107,9 @@ const PORTFOLIO_DATA = {
     cvPath: "https://drive.google.com/file/d/19s07lC7-jWxQSKjaI6XeR3jShUq2KLCr/view?usp=share_link",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
-      { value: "6", label: "Certificates" },
-      { value: "9", label: "Projects" },
-      { value: "3", label: "Courses" },
+      { value: "4", label: "Certificates" },
+      { value: "10", label: "Projects" },
+      { value: "10", label: "Courses" },
       { value: "1", label: "Internship" },
     ],
   },
@@ -112,6 +124,7 @@ const PORTFOLIO_DATA = {
         institution: "University of Bahrain",
         period: "September 2022 – August 2026",
         details: "Zallaq, Bahrain",
+        viewPath: "https://drive.google.com/file/d/1PWufnMR61vBxLiLx9plVW2xjIRxdB7Ie/view?usp=share_link",
       },
       {
         degree: "High School Certificate",
@@ -146,6 +159,41 @@ const PORTFOLIO_DATA = {
       provider: "OPS Cyber Academy – NCSC Training Program",
       viewPath: "https://drive.google.com/file/d/1Yu7CVCg-RX81Zv9TW9uL4I7T_A1F2Yf0/view?usp=sharing",
     },
+    {
+      title: "Solidity for Beginners: Write and Test Smart Contracts",
+      provider: "Coursera",
+      viewPath: "https://drive.google.com/file/d/1658qQU5-Q37lY_xN77FoyoBb7Vs_yb02/view?usp=sharing",
+    },
+    {
+      title: "Windows Registry Forensics",
+      provider: "Infosec Coursera",
+      viewPath: "https://drive.google.com/file/d/1AT3QQzzOjf59MCcngP33tdZwwr5U1f9v/view?usp=sharing",
+    },
+    {
+      title: "Web Application Security Testing with OWASP ZAP",
+      provider: "Coursera",
+      viewPath: "https://drive.google.com/file/d/1wS2dSxo8rwSZCXWaB6JvrRqLFRPUiR6z/view?usp=sharing",
+    },
+    {
+      title: "How to Secure your Network Device using Cisco Packet Tracer",
+      provider: "Coursera Project Network",
+      viewPath: "https://drive.google.com/file/d/1PAPuaXbN7-yYn4TrpelJpBbBTHBnilYC/view?usp=sharing",
+    },
+    {
+      title: "Project Management: How to Create a Gantt Chart in Wrike",
+      provider: "Coursera Project Network",
+      viewPath: "https://drive.google.com/file/d/1kcIklRHhVggs4GmTgO6I51_5O1KGt6Kz/view?usp=sharing",
+    },
+    {
+      title: "Get Started with Wrike",
+      provider: "Coursera Project Network",
+      viewPath: "https://drive.google.com/file/d/1_5UIbyu4XWf7CeYV5lW4BAgJDSO4q2C1/view?usp=sharing",
+    },
+    {
+      title: "AWS Academy Graduate – Cloud Security Foundations",
+      provider: "AWS Academy",
+      viewPath: "https://drive.google.com/file/d/12KUUuH7WeoXgDLmYfIuzcs2CAsX54v7i/view?usp=sharing",
+    },
   ],
 
   /* ── Skills ──────────────────────────────────────────────────── */
@@ -179,6 +227,58 @@ const PORTFOLIO_DATA = {
   projectsNote:
     "This section highlights a selection of my most significant projects. I have worked on additional projects not featured here—please feel free to <a href=\"#contact\">contact me</a> if you would like to learn more.",
   projects: [
+    {
+      id: "youth-city-visitor-tracking",
+      title: "Youth City 2030 – Visitor Registration and Tracking System",
+      description:
+        "A two-part visitor system for Youth City 2030: Google Apps for registration, daily tickets, and capacity, plus a live multi-gate website that times 45-minute visits.",
+      thumbnail: "assets/images/certificate/ransformative Power of Artificial Intelligence.png",
+      technologies: ["Google Apps Script", "Google Forms", "HTML/CSS/JavaScript", "Firebase"],
+      modal: {
+        overview:
+          "While organizing the Ushers Committee for Youth City 2030 (July 2026 – August 2026), I built the full visitor operations system. Google Apps Script, Forms, and Sheets handle registration and capacity before entry. A Visitor Timer Board website then tracks each 45-minute visit live across every gate.",
+        problem:
+          "Ushers registered visitors and watched who was inside by hand. Capacity was hard to enforce, gates could not see the same information, and staff needed personal details just to know who was on site and when a visit should end.",
+        solution:
+          "I linked Google Forms to Google Sheets with Apps Script so daily ticket availability, capacity limits, and registration records update automatically, using unique visitor IDs instead of personal information. On site, the Visitor Timer Board starts a 45-minute session from one of two entrances and the visitor card number, warns staff at 15 minutes, flags overtime, locks a used card until the next day, and syncs morning and night boards to every gate through Firebase.",
+        keyFeatures: [
+          "Google Forms registration linked to Google Sheets",
+          "Apps Script automation for daily tickets and capacity limits",
+          "Registration records with unique visitor IDs",
+          "Visitor Timer Board for 45-minute visits",
+          "Separate morning and night operations",
+          "100 visitor cards, with extra cards when needed",
+          "Choice of two entrances",
+          "Search by visitor card number and status filters",
+          "Live counts for inside, 15 minutes left, overtime, used, and free",
+          "Sound alerts and desktop notifications",
+          "Cards lock until the next day after a visit",
+          "Multi-gate live sync with Firebase Realtime Database",
+        ],
+        technologies: [
+          "Google Forms",
+          "Google Sheets",
+          "Google Apps Script",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Firebase Realtime Database",
+        ],
+        contributions:
+          "Organized ushering for Youth City 2030 and built both parts of the system: the Google Apps registration and capacity workflow, and the multi-gate Visitor Timer Board, including timers, alerts, card locking, and live sync.",
+        challenges:
+          "Enforcing capacity without storing personal information, and keeping every gate on the same live board during morning and night sessions so a card could not be reused the same day.",
+        lessonsLearned:
+          "Separating registration in Google Apps from on-site timing on the website made check-in faster and gave every gate one shared view of who was inside, who was near the 45-minute limit, and which cards were still free.",
+      },
+      resources: [
+        {
+          type: "video",
+          label: "Demo",
+          url: "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link",
+        },
+      ],
+    },
     {
       id: "shellsentry",
       title: "ShellSentry – Secure Natural Language to Bash Execution Platform",
@@ -575,6 +675,13 @@ const PORTFOLIO_DATA = {
   /* ── Certificates (from CV — not courses or organisations) ───── */
   certificates: [
     {
+      title: "Certificate of Achievement – UN Volunteer, Youth City Bahrain 2030",
+      organization: "United Nations Volunteers (UNV)",
+      date: "July 2026 – August 2026",
+      image: "assets/images/certificate/UN Voulnteer.png",
+      viewPath: "https://drive.google.com/file/d/1hvw0wBHxRzS85kKmGBRm2UexklBm_8OZ/view?usp=share_link",
+    },
+    {
       title: "Participation Certificate – StartUp Bahrain",
       organization: "StartUp Bahrain",
       date: "May 2026",
@@ -595,6 +702,10 @@ const PORTFOLIO_DATA = {
       image: "assets/images/certificate/ransformative Power of Artificial Intelligence.png",
       viewPath: "https://drive.google.com/file/d/1jr7kxy84VjpZl9hmCOpS_lXl0XFOjNQh/view?usp=sharing",
     },
+  ],
+
+  /* ── License ─────────────────────────────────────────────────── */
+  licenses: [
     {
       title: "HSI Adult First Aid | CPR AED Certification",
       organization: "Sinyar Emergency",
@@ -602,6 +713,17 @@ const PORTFOLIO_DATA = {
       image: "assets/images/certificate/HSI Adult First Aid | CPR AED Certification Sinyar Emergency.webp",
       viewPath: "https://drive.google.com/file/d/1aqt5LKjPwX4aRSqC-7HuRHlNsgQYj6PP/view?usp=sharing",
     },
+    {
+      title: "Cisco Certified Network Associate Cybersecurity",
+      organization: "Cisco",
+      date: "In Progress",
+      image: "assets/images/certificate/cisco_ccna_security.png",
+      inProgress: true,
+    },
+  ],
+
+  /* ── Awards ──────────────────────────────────────────────────── */
+  awards: [
     {
       title: "Third Place – Sh. Fadyah Alsaad Science Competition (STEAM)",
       organization: "Sh. Fadyah Alsaad Science Competition (Arab Level)",

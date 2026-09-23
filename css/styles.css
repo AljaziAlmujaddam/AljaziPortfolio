@@ -195,6 +195,7 @@ button {
   font-weight: 400;
   letter-spacing: -0.02em;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .nav__logo-img {
@@ -212,11 +213,12 @@ button {
 }
 
 .nav__link {
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) 0.7rem;
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--color-text-muted);
   border-radius: var(--radius-sm);
+  white-space: nowrap;
   transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
@@ -596,6 +598,11 @@ button {
   color: var(--color-text-muted);
 }
 
+.education-item__link {
+  display: inline-flex;
+  margin-top: var(--space-md);
+}
+
 .interest-list {
   display: flex;
   flex-wrap: wrap;
@@ -672,9 +679,14 @@ button {
 
 /* ── Courses ───────────────────────────────────────────────────────────────── */
 .courses__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-xl);
+}
+
+.courses__grid .course-card {
+  width: calc((100% - 2 * var(--space-xl)) / 3);
 }
 
 .course-card {
@@ -704,9 +716,14 @@ button {
 
 /* ── Projects ────────────────────────────────────────────────────────────────── */
 .projects__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-xl);
+}
+
+.projects__grid .project-card {
+  width: calc((100% - 2 * var(--space-xl)) / 3);
 }
 
 .project-card {
@@ -778,11 +795,29 @@ button {
   font-weight: 500;
 }
 
-/* ── Certificates ────────────────────────────────────────────────────────────── */
+/* ── Certificates & Awards ───────────────────────────────────────────────────── */
 .certificates__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-xl);
+}
+
+.certificates__grid .certificate-card {
+  width: calc((100% - 2 * var(--space-xl)) / 3);
+}
+
+.awards__grid,
+.licenses__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+}
+
+.awards__grid .certificate-card,
+.licenses__grid .certificate-card {
+  width: min(100%, 360px);
 }
 
 .certificate-card {
@@ -799,6 +834,7 @@ button {
 }
 
 .certificate-card__image {
+  position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   display: flex;
@@ -807,6 +843,19 @@ button {
   padding: var(--space-sm);
   background: var(--color-bg-alt);
   border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.certificate-card__badge {
+  position: absolute;
+  top: var(--space-sm);
+  inset-inline-end: var(--space-sm);
+  padding: 0.25rem 0.7rem;
+  background: var(--color-accent);
+  color: var(--color-surface);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .certificate-card__image img {
@@ -1394,6 +1443,12 @@ button {
     text-align: center;
   }
 
+  .certificates__grid .certificate-card,
+  .projects__grid .project-card,
+  .courses__grid .course-card {
+    width: calc((100% - var(--space-xl)) / 2);
+  }
+
   .section__title {
     font-size: var(--text-3xl);
   }
@@ -1403,14 +1458,9 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
   .nav__toggle {
     display: flex;
-  }
-
-  .skills__grid {
-    grid-template-columns: 1fr;
-    max-width: none;
   }
 
   .nav__menu {
@@ -1440,6 +1490,13 @@ button {
     width: 100%;
     padding: var(--space-md);
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+    max-width: none;
   }
 
   .section {
@@ -1494,9 +1551,10 @@ button {
     width: 100%;
   }
 
-  .projects__grid,
-  .certificates__grid {
-    grid-template-columns: 1fr;
+  .certificates__grid .certificate-card,
+  .projects__grid .project-card,
+  .courses__grid .course-card {
+    width: 100%;
   }
 
   .resources__grid {
@@ -1527,6 +1585,14 @@ button {
 /* ── RTL / Arabic ──────────────────────────────────────────────────────────────── */
 [dir="rtl"] {
   --font-sans: "IBM Plex Sans Arabic", "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: "IBM Plex Sans Arabic", "DM Sans", system-ui, -apple-system, sans-serif;
+}
+
+[dir="rtl"] .nav__logo,
+[dir="rtl"] .section__title,
+[dir="rtl"] .hero__name,
+[dir="rtl"] .modal__title {
+  letter-spacing: 0;
 }
 
 [dir="rtl"] .skip-link {
