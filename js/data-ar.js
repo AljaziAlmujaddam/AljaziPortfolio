@@ -199,30 +199,52 @@ const PORTFOLIO_DATA = {
   ],
   "skills": [
     {
-      "category": "لغات البرمجة",
+      "category": "الأمن السيبراني",
       "items": [
-        "Python",
-        "Java",
-        "Bash",
-        "HTML/CSS"
-      ]
-    },
-    {
-      "category": "الأمن السيبراني وتقنية المعلومات",
-      "items": [
+        "Wireshark",
+        "تقييم المخاطر",
+        "التحليل الأمني",
+        "نمذجة التهديدات",
+        "STRIDE",
+        "SQUARE",
+        "أمن الشبكات",
+        "التشفير",
+        "OSINT",
+        "تدقيق تقنية المعلومات",
         "Linux",
         "SSH",
-        "تقييم المخاطر",
-        "نمذجة التهديدات",
         "تطوير البرمجيات الآمنة",
-        "أساسيات الشبكات"
+        "التحقيق الرقمي",
+        "NIST",
+        "ISO 27001",
+        "COBIT 2019"
       ]
     },
     {
-      "category": "الأدوات والمنصات",
+      "category": "تطوير البرمجيات والويب",
       "items": [
-        "Version Control & Repository Hosting",
-        "إدارة قواعد البيانات"
+        "تطوير البرمجيات",
+        "تطوير الويب",
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML/CSS",
+        "Flask",
+        "Bash",
+        "JSON",
+        "Google Apps Script"
+      ]
+    },
+    {
+      "category": "الأدوات",
+      "items": [
+        "Figma",
+        "Microsoft Office",
+        "Google Sheets",
+        "Google Forms",
+        "التحكم بالإصدارات واستضافة المستودعات",
+        "إدارة قواعد البيانات",
+        "Cisco Packet Tracer"
       ]
     },
     {

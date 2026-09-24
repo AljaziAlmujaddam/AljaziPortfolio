@@ -204,30 +204,52 @@ PORTFOLIO_DATA = {
   ],
   "skills": [
     {
-      "category": "لغات البرمجة",
+      "category": "الأمن السيبراني",
       "items": [
-        "Python",
-        "Java",
-        "Bash",
-        "HTML/CSS"
-      ]
-    },
-    {
-      "category": "الأمن السيبراني وتقنية المعلومات",
-      "items": [
+        "Wireshark",
+        "تقييم المخاطر",
+        "التحليل الأمني",
+        "نمذجة التهديدات",
+        "STRIDE",
+        "SQUARE",
+        "أمن الشبكات",
+        "التشفير",
+        "OSINT",
+        "تدقيق تقنية المعلومات",
         "Linux",
         "SSH",
-        "تقييم المخاطر",
-        "نمذجة التهديدات",
         "تطوير البرمجيات الآمنة",
-        "أساسيات الشبكات"
+        "التحقيق الرقمي",
+        "NIST",
+        "ISO 27001",
+        "COBIT 2019"
       ]
     },
     {
-      "category": "الأدوات والمنصات",
+      "category": "تطوير البرمجيات والويب",
       "items": [
-        "GitHub",
-        "إدارة قواعد البيانات"
+        "تطوير البرمجيات",
+        "تطوير الويب",
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML/CSS",
+        "Flask",
+        "Bash",
+        "JSON",
+        "Google Apps Script"
+      ]
+    },
+    {
+      "category": "الأدوات",
+      "items": [
+        "Figma",
+        "Microsoft Office",
+        "Google Sheets",
+        "Google Forms",
+        "التحكم بالإصدارات واستضافة المستودعات",
+        "إدارة قواعد البيانات",
+        "Cisco Packet Tracer"
       ]
     },
     {
@@ -880,7 +902,7 @@ def write_index_ar() -> None:
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=ytlinks" />
+    <link rel="stylesheet" href="css/styles.css?v=skills3" />
   </head>
   <body>
     <a href="#home" class="skip-link" id="skip-link">{ui['skipLink']}</a>
@@ -906,13 +928,13 @@ def write_index_ar() -> None:
         <ul class="nav__menu" id="nav-menu">
           <li><a href="#home" class="nav__link" id="nav-home">{ui['navHome']}</a></li>
           <li><a href="#about" class="nav__link" id="nav-about">{ui['navAbout']}</a></li>
-          <li><a href="#courses" class="nav__link" id="nav-courses">{ui['navCourses']}</a></li>
           <li><a href="#skills" class="nav__link" id="nav-skills">{ui['navSkills']}</a></li>
+          <li><a href="#experience" class="nav__link" id="nav-experience">{ui['navExperience']}</a></li>
           <li><a href="#projects" class="nav__link" id="nav-projects">{ui['navProjects']}</a></li>
+          <li><a href="#courses" class="nav__link" id="nav-courses">{ui['navCourses']}</a></li>
           <li><a href="#certificates" class="nav__link" id="nav-certificates">{ui['navCertificates']}</a></li>
           <li><a href="#license" class="nav__link" id="nav-license">{ui['navLicense']}</a></li>
           <li><a href="#awards" class="nav__link" id="nav-awards">{ui['navAwards']}</a></li>
-          <li><a href="#experience" class="nav__link" id="nav-experience">{ui['navExperience']}</a></li>
           <li><a href="#contact" class="nav__link" id="nav-contact">{ui['navContact']}</a></li>
           <li><a href="index.html" class="nav__link nav__link--lang" id="lang-switch" aria-label="{ui['langSwitchAria']}">{ui['langSwitch']}</a></li>
         </ul>
@@ -983,16 +1005,6 @@ def write_index_ar() -> None:
         </div>
       </section>
 
-      <section class="section" id="courses">
-        <div class="container">
-          <header class="section__header fade-in">
-            <span class="section__label" id="courses-label">{ui['coursesLabel']}</span>
-            <h2 class="section__title" id="courses-title">{ui['coursesTitle']}</h2>
-          </header>
-          <div class="courses__grid" id="courses-container"></div>
-        </div>
-      </section>
-
       <section class="section section--alt" id="skills">
         <div class="container">
           <header class="section__header fade-in">
@@ -1003,7 +1015,17 @@ def write_index_ar() -> None:
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section" id="experience">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label" id="experience-label">{ui['experienceLabel']}</span>
+            <h2 class="section__title" id="experience-title">{ui['experienceTitle']}</h2>
+          </header>
+          <div class="timeline" id="experience-container"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="projects">
         <div class="container">
           <header class="section__header fade-in">
             <span class="section__label" id="projects-label">{ui['projectsLabel']}</span>
@@ -1011,6 +1033,16 @@ def write_index_ar() -> None:
             <p class="section__note" id="projects-note"></p>
           </header>
           <div class="projects__grid" id="projects-container"></div>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="container">
+          <header class="section__header fade-in">
+            <span class="section__label" id="courses-label">{ui['coursesLabel']}</span>
+            <h2 class="section__title" id="courses-title">{ui['coursesTitle']}</h2>
+          </header>
+          <div class="courses__grid" id="courses-container"></div>
         </div>
       </section>
 
@@ -1044,17 +1076,7 @@ def write_index_ar() -> None:
         </div>
       </section>
 
-      <section class="section" id="experience">
-        <div class="container">
-          <header class="section__header fade-in">
-            <span class="section__label" id="experience-label">{ui['experienceLabel']}</span>
-            <h2 class="section__title" id="experience-title">{ui['experienceTitle']}</h2>
-          </header>
-          <div class="timeline" id="experience-container"></div>
-        </div>
-      </section>
-
-      <section class="section section--alt" id="contact">
+      <section class="section" id="contact">
         <div class="container">
           <header class="section__header fade-in">
             <span class="section__label" id="contact-label">{ui['contactLabel']}</span>
@@ -1081,8 +1103,8 @@ def write_index_ar() -> None:
       </div>
     </footer>
 
-    <script src="js/data-ar.js?v=ytlinks"></script>
-    <script src="js/main.js?v=ytlinks"></script>
+    <script src="js/data-ar.js?v=skills3"></script>
+    <script src="js/main.js?v=skills3"></script>
   </body>
 </html>
 """
