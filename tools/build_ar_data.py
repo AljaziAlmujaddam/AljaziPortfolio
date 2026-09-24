@@ -93,7 +93,8 @@ PORTFOLIO_DATA = {
       "challenges": "التحديات",
       "lessonsLearned": "الدروس المستفادة",
       "resources": "الموارد",
-      "btnOpen": "افتح"
+      "btnOpen": "افتح",
+      "videoUnavailable": "العرض التجريبي غير متوفر حالياً."
     },
     "metaDescription": "محفظة مهنية — مشاريع وخبرات ووسائل تواصل."
   },
@@ -287,7 +288,7 @@ PORTFOLIO_DATA = {
         {
           "type": "video",
           "label": "عرض تجريبي",
-          "url": "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link"
+          "url": "https://youtu.be/5zFzgEgzimE"
         }
       ]
     },
@@ -446,7 +447,7 @@ PORTFOLIO_DATA = {
         {
           "type": "video",
           "label": "تسجيل المشروع",
-          "url": "https://drive.google.com/file/d/1_IveYU5QkGQDeI-ycUYkfiHi0caShIoZ/view?usp=share_link"
+          "url": "https://youtu.be/-jBw7VIUGtg"
         }
       ]
     },
@@ -584,7 +585,7 @@ PORTFOLIO_DATA = {
         {
           "type": "video",
           "label": "فيديو العرض",
-          "url": "https://drive.google.com/file/d/1UNZGxOW41Kzy7rHSIwMQ5TgplpEoiUue/view?usp=share_link"
+          "url": "https://youtu.be/0dnKruxDz4g"
         }
       ]
     },
@@ -807,7 +808,7 @@ PORTFOLIO_DATA = {
       "period": "يوليو 2026 – أغسطس 2026",
       "description": "نظّمت ونسّقت أنشطة لجنة أرض موقع لفعاليات مدينة الشباب 2030. طوّرت أدوات رقمية لتبسيط تسجيل الزوار وتتبعهم في فعاليات مدينة الشباب 2030، مما قلّل العمل الإداري اليدوي من خلال الأتمتة. صمّمت ونفّذت نظام تسجيل عبر Google Forms متكامل مع Google Sheets وGoogle Apps Script لأتمتة توفر التذاكر اليومية، وفرض حدود السعة للزوار، والاحتفاظ بسجلات التسجيل. بنيت نظاماً خفيفاً يركز على الخصوصية لتتبع الزوار باستخدام معرّفات فريدة بدلاً من المعلومات الشخصية، مع مراقبة الإشغال في الوقت الفعلي، ومؤقتات جلسات مدتها 45 دقيقة، وبطاقات زوار تفاعلية، وتنبيهات آلية (15 دقيقة متبقية)، وتنبيهات تجاوز الوقت، وتتبع مباشر للمواقع المتاحة للزوار.",
       "viewPath": "https://drive.google.com/file/d/1haq96TZs68l4wAPa3oUByT0gTPJ_RetU/view?usp=share_link",
-      "demoPath": "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link"
+      "demoPath": "project-ar.html?id=youth-city-visitor-tracking#demo"
     },
     {
       "type": "event",
@@ -879,7 +880,7 @@ def write_index_ar() -> None:
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=ytlinks" />
   </head>
   <body>
     <a href="#home" class="skip-link" id="skip-link">{ui['skipLink']}</a>
@@ -1080,8 +1081,8 @@ def write_index_ar() -> None:
       </div>
     </footer>
 
-    <script src="js/data-ar.js?v=ccna"></script>
-    <script src="js/main.js?v=ccna"></script>
+    <script src="js/data-ar.js?v=ytlinks"></script>
+    <script src="js/main.js?v=ytlinks"></script>
   </body>
 </html>
 """

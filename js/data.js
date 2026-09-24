@@ -92,6 +92,7 @@ const PORTFOLIO_DATA = {
       lessonsLearned: "Lessons Learned",
       resources: "Resources",
       btnOpen: "Open",
+      videoUnavailable: "The demo video is not available yet.",
     },
     metaDescription: "Professional portfolio — projects, experience, and contact.",
   },
@@ -275,7 +276,7 @@ const PORTFOLIO_DATA = {
         {
           type: "video",
           label: "Demo",
-          url: "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link",
+          url: "https://youtu.be/5zFzgEgzimE",
         },
       ],
     },
@@ -415,7 +416,7 @@ const PORTFOLIO_DATA = {
         {
           type: "video",
           label: "Project Recording",
-          url: "https://drive.google.com/file/d/1_IveYU5QkGQDeI-ycUYkfiHi0caShIoZ/view?usp=share_link",
+          url: "https://youtu.be/-jBw7VIUGtg",
         },
       ],
     },
@@ -539,7 +540,7 @@ const PORTFOLIO_DATA = {
         {
           type: "video",
           label: "Demo Video",
-          url: "https://drive.google.com/file/d/1UNZGxOW41Kzy7rHSIwMQ5TgplpEoiUue/view?usp=share_link",
+          url: "https://youtu.be/0dnKruxDz4g",
         },
       ],
     },
@@ -759,7 +760,7 @@ const PORTFOLIO_DATA = {
       description:
         "Organized and coordinated ushering activities for Youth City 2030 events. Developed digital tools to streamline visitor registration and tracking for Youth City 2030 events, reducing manual administrative work through automation. Designed and implemented a Google Forms registration system integrated with Google Sheets and Google Apps Script to automate daily ticket availability, enforce visitor capacity limits, and maintain registration records. Built a lightweight, privacy-focused visitor tracking system using unique visitor IDs instead of personal information, with real-time occupancy monitoring, 45-minute session timers, interactive visitor cards, automated warnings (15 minutes remaining), overtime alerts, and live tracking of available visitor slots.",
       viewPath: "https://drive.google.com/file/d/1haq96TZs68l4wAPa3oUByT0gTPJ_RetU/view?usp=share_link",
-      demoPath: "https://drive.google.com/file/d/1RnpyXaRmWgiSsyQ8GBQ2l4RmOhj8ycMX/view?usp=share_link",
+      demoPath: "project.html?id=youth-city-visitor-tracking#demo",
     },
     {
       type: "event",

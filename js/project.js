@@ -23,6 +23,7 @@
     lessonsLearned: ui.lessonsLearned || "Lessons Learned",
     resources: ui.resources || "Resources",
     btnOpen: ui.btnOpen || "Open",
+    videoUnavailable: ui.videoUnavailable || "The demo video is not available yet.",
   };
 
   const RESOURCE_ICONS = {
@@ -53,6 +54,18 @@
       .split("/")
       .map((segment) => encodeURIComponent(segment))
       .join("/");
+  }
+
+  function youtubeId(url) {
+    const str = String(url || "");
+    const watch = str.match(/[?&]v=([a-zA-Z0-9_-]{11})/);
+    if (watch) return watch[1];
+    const short = str.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
+    if (short) return short[1];
+    const embed = str.match(/youtube(?:-nocookie)?\.com\/(?:embed\/|shorts\/)([a-zA-Z0-9_-]{11})/);
+    if (embed) return embed[1];
+    const shorts = str.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/);
+    return shorts ? shorts[1] : "";
   }
 
   function getProjectId() {
@@ -90,15 +103,39 @@
       </section>`;
   }
 
+  function renderVideos(videos) {
+    if (!videos.length) return "";
+    return videos
+      .map((resource, index) => {
+        const yt = youtubeId(resource.url || resource.path || "");
+        if (!yt) return "";
+        const id = index === 0 ? "demo" : `demo-${index}`;
+        return `
+      <section class="project-demo modal__section" id="${id}">
+        <h3 class="modal__section-title">${escapeHtml(resource.label)}</h3>
+        <div class="project-demo__frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/${escapeAttr(yt)}"
+            title="${escapeAttr(resource.label)}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>`;
+      })
+      .join("");
+  }
+
   function renderResources(title, resources) {
-    if (!resources || !resources.length) return "";
+    const files = (resources || []).filter((resource) => resource.type !== "video");
+    if (!files.length) return "";
     return `
       <section class="modal__resources">
         <h3 class="modal__resources-title">${escapeHtml(title)}</h3>
         <div class="resources__grid">
-          ${resources
+          ${files
             .map((resource) => {
-              const href = resource.url || toAssetUrl(resource.path);
+              const href = toAssetUrl(resource.url || resource.path || "");
               const icon = RESOURCE_ICONS[resource.type] || RESOURCE_ICONS.pdf;
               return `
               <a href="${escapeAttr(href)}" class="resource-card" target="_blank" rel="noopener noreferrer">
@@ -115,6 +152,7 @@
   function renderProject(project) {
     const modal = project.modal || {};
     const techList = modal.technologies || project.technologies || [];
+    const videos = (project.resources || []).filter((resource) => resource.type === "video");
 
     return `
       <article class="project-detail card">
@@ -128,6 +166,7 @@
             ${project.technologies.map((t) => `<span>${escapeHtml(t)}</span>`).join("")}
           </div>
         </header>
+        ${renderVideos(videos)}
         ${renderSection(labels.overview, modal.overview)}
         ${renderSection(labels.problem, modal.problem)}
         ${renderSection(labels.solution, modal.solution)}
@@ -166,6 +205,11 @@
 
     container.innerHTML = renderProject(project);
     document.title = `${project.title} - ${data.site.brandName}`;
+
+    const demoTarget = document.getElementById("demo");
+    if (demoTarget && window.location.hash === "#demo") {
+      demoTarget.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   }
 
   if (document.readyState === "loading") {

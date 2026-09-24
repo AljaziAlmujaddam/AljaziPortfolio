@@ -438,10 +438,9 @@
             ${
               item.demoPath
                 ? `<a
-            href="${escapeAttr(toAssetUrl(item.demoPath))}"
+            href="${escapeAttr(toHref(item.demoPath))}"
             class="btn btn--secondary btn--small timeline-item__link"
-            target="_blank"
-            rel="noopener noreferrer"
+            ${isExternalHref(item.demoPath) ? `target="_blank" rel="noopener noreferrer"` : ""}
           >${escapeHtml(ui.btnViewDemo)}</a>`
                 : ""
             }
@@ -512,6 +511,16 @@
       .split("/")
       .map((segment) => encodeURIComponent(segment))
       .join("/");
+  }
+
+  function toHref(path) {
+    const str = String(path || "");
+    if (/^https?:\/\//i.test(str) || /[?#]/.test(str)) return str;
+    return toAssetUrl(str);
+  }
+
+  function isExternalHref(path) {
+    return /^https?:\/\//i.test(String(path || ""));
   }
 
   /* ── Shared Scroll Observer (for dynamically rendered elements) ──────────────── */
