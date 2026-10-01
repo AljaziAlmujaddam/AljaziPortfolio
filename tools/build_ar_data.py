@@ -108,7 +108,7 @@ PORTFOLIO_DATA = {
     "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
-        "value": "4",
+        "value": "5",
         "label": "شهادات"
       },
       {
@@ -755,6 +755,13 @@ PORTFOLIO_DATA = {
   ],
   "certificates": [
     {
+      "title": "شهادة مشاركة – كُن أذكى من الذكاء الاصطناعي",
+      "organization": "المركز الوطني للأمن السيبراني، بالتعاون مع معهد البحرين للدراسات المصرفية والمالية (BIBF)",
+      "date": "سبتمبر 2026",
+      "image": "assets/images/certificate/BeSmartThanAI.png",
+      "viewPath": "https://drive.google.com/file/d/1nk-CR2wYe9ahLOHsNMJe2-2EWRWg6Gq9/view?usp=sharing"
+    },
+    {
       "title": "شهادة إنجاز – متطوعة الأمم المتحدة، مدينة الشباب البحرين 2030",
       "organization": "متطوعو الأمم المتحدة (UNV)",
       "date": "يوليو 2026 – أغسطس 2026",
@@ -902,7 +909,7 @@ def write_index_ar() -> None:
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=skills3" />
+    <link rel="stylesheet" href="css/styles.css?v=besmart3" />
   </head>
   <body>
     <a href="#home" class="skip-link" id="skip-link">{ui['skipLink']}</a>
@@ -1103,8 +1110,8 @@ def write_index_ar() -> None:
       </div>
     </footer>
 
-    <script src="js/data-ar.js?v=skills3"></script>
-    <script src="js/main.js?v=skills3"></script>
+    <script src="js/data-ar.js?v=besmart3"></script>
+    <script src="js/main.js?v=besmart3"></script>
   </body>
 </html>
 """

@@ -108,7 +108,7 @@ const PORTFOLIO_DATA = {
     cvPath: "https://drive.google.com/file/d/19s07lC7-jWxQSKjaI6XeR3jShUq2KLCr/view?usp=share_link",
     brandName: "Aljazi Almujaddam Portfolio",
     heroStats: [
-      { value: "4", label: "Certificates" },
+      { value: "5", label: "Certificates" },
       { value: "10", label: "Projects" },
       { value: "10", label: "Courses" },
       { value: "1", label: "Internship" },
@@ -705,6 +705,13 @@ const PORTFOLIO_DATA = {
 
   /* ── Certificates (from CV — not courses or organisations) ───── */
   certificates: [
+    {
+      title: "Participation Certificate – Be Smarter Than AI",
+      organization: "National Cyber Security Center, in cooperation with BIBF",
+      date: "September 2026",
+      image: "assets/images/certificate/BeSmartThanAI.png",
+      viewPath: "https://drive.google.com/file/d/1nk-CR2wYe9ahLOHsNMJe2-2EWRWg6Gq9/view?usp=sharing",
+    },
     {
       title: "Certificate of Achievement – UN Volunteer, Youth City Bahrain 2030",
       organization: "United Nations Volunteers (UNV)",

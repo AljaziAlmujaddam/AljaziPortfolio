@@ -103,7 +103,7 @@ const PORTFOLIO_DATA = {
     "brandName": "معرض أعمال الجازي المجدم",
     "heroStats": [
       {
-        "value": "4",
+        "value": "5",
         "label": "شهادات"
       },
       {
@@ -749,6 +749,13 @@ const PORTFOLIO_DATA = {
     }
   ],
   "certificates": [
+    {
+      "title": "شهادة مشاركة – كُن أذكى من الذكاء الاصطناعي",
+      "organization": "المركز الوطني للأمن السيبراني، بالتعاون مع معهد البحرين للدراسات المصرفية والمالية (BIBF)",
+      "date": "سبتمبر 2026",
+      "image": "assets/images/certificate/BeSmartThanAI.png",
+      "viewPath": "https://drive.google.com/file/d/1nk-CR2wYe9ahLOHsNMJe2-2EWRWg6Gq9/view?usp=sharing"
+    },
     {
       "title": "شهادة إنجاز – متطوعة الأمم المتحدة، مدينة الشباب البحرين 2030",
       "organization": "متطوعو الأمم المتحدة (UNV)",
