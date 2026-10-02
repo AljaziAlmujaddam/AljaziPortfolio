@@ -112,6 +112,7 @@ const PORTFOLIO_DATA = {
       { value: "10", label: "Projects" },
       { value: "10", label: "Courses" },
       { value: "1", label: "Internship" },
+      { value: "1", label: "License" },
     ],
   },
 

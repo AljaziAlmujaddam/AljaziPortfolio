@@ -117,6 +117,10 @@ const PORTFOLIO_DATA = {
       {
         "value": "1",
         "label": "تدريب"
+      },
+      {
+        "value": "1",
+        "label": "رخصة"
       }
     ]
   },

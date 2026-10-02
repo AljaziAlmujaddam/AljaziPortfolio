@@ -434,14 +434,15 @@ button {
 
 .hero__stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-sm);
   margin-bottom: var(--space-2xl);
-  max-width: 560px;
+  max-width: 100%;
 }
 
 .hero-stat {
-  padding: var(--space-md) var(--space-sm);
+  min-width: 0;
+  padding: var(--space-md) 0.4rem;
   background: rgba(255, 255, 255, 0.72);
   border: 2px solid var(--palette-sky);
   border-radius: var(--radius-md);
@@ -1560,7 +1561,6 @@ button {
   }
 
   .hero__stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-sm);
   }
 

@@ -122,6 +122,10 @@ PORTFOLIO_DATA = {
       {
         "value": "1",
         "label": "تدريب"
+      },
+      {
+        "value": "1",
+        "label": "رخصة"
       }
     ]
   },
@@ -909,7 +913,7 @@ def write_index_ar() -> None:
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=besmart3" />
+    <link rel="stylesheet" href="css/styles.css?v=license2" />
   </head>
   <body>
     <a href="#home" class="skip-link" id="skip-link">{ui['skipLink']}</a>
@@ -1110,8 +1114,8 @@ def write_index_ar() -> None:
       </div>
     </footer>
 
-    <script src="js/data-ar.js?v=besmart3"></script>
-    <script src="js/main.js?v=besmart3"></script>
+    <script src="js/data-ar.js?v=license2"></script>
+    <script src="js/main.js?v=license2"></script>
   </body>
 </html>
 """
